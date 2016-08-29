@@ -26,6 +26,8 @@ TODO: Library to track events in some libraries and open external urls.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'AdvertileSDK/Classes/**/*'
+  s.dependency 'SwrveSDK'
+  s.dependency 'Google/Analytics'
 
   # s.resource_bundles = {
   #   'AdvertileSDK' => ['AdvertileSDK/Assets/*.png']
@@ -33,6 +35,4 @@ TODO: Library to track events in some libraries and open external urls.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  s.dependency 'SwrveSDK'
-  s.dependency 'Google/Analytics'
 end
