@@ -1,0 +1,16 @@
+PODS:
+  - AdvertileSDK (0.1.0)
+
+DEPENDENCIES:
+  - AdvertileSDK (from `../`)
+
+EXTERNAL SOURCES:
+  AdvertileSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AdvertileSDK: d6713805707a22fbfdb4cd6c6cbae429578f0dcf
+
+PODFILE CHECKSUM: ce8dffdbc8ec5ac4f94250ddd53ba666604ddde5
+
+COCOAPODS: 1.0.0
