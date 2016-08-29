@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AdvertileSDK_Example' do
+  pod 'AdvertileSDK', :path => '../'
+
+  target 'AdvertileSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
