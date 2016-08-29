@@ -2,15 +2,20 @@ PODS:
   - AdvertileSDK (0.1.0)
 
 DEPENDENCIES:
-  - AdvertileSDK (from `../`)
+  - AdvertileSDK (from `http://javier.peigneux@dev.navilo.es:7990/scm/asdk/advertilesdk.git`)
 
 EXTERNAL SOURCES:
   AdvertileSDK:
-    :path: "../"
+    :git: http://javier.peigneux@dev.navilo.es:7990/scm/asdk/advertilesdk.git
+
+CHECKOUT OPTIONS:
+  AdvertileSDK:
+    :commit: 6a6379580a35ffdae119914df35480b908f6acce
+    :git: http://javier.peigneux@dev.navilo.es:7990/scm/asdk/advertilesdk.git
 
 SPEC CHECKSUMS:
   AdvertileSDK: d6713805707a22fbfdb4cd6c6cbae429578f0dcf
 
-PODFILE CHECKSUM: ce8dffdbc8ec5ac4f94250ddd53ba666604ddde5
+PODFILE CHECKSUM: c9a105af68700996243e548ea27e67d40738940b
 
 COCOAPODS: 1.0.0

@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		0D5BFE21697214616706C4BFB56196B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		286C60212764E3C4A805CF91B35FD0C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		39304B31701C8C307ADDD80EEF3F24C1 /* AdvertileSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC1AA4F7B280F1B3B4764D3E4428893 /* AdvertileSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39304B31701C8C307ADDD80EEF3F24C1 /* AdvertileSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 648B19EBE82984D12A545AA62BA7C16B /* AdvertileSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		494D7E341D748D4A000332FD /* AdvertileSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 494D7E321D748D4A000332FD /* AdvertileSDK.h */; };
+		494D7E351D748D4A000332FD /* AdvertileSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 494D7E331D748D4A000332FD /* AdvertileSDK.m */; };
 		5A3FF064B4B0670D6F2E4DE16901B253 /* Pods-AdvertileSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C8C1F7A246E637536F808F8BF505D3 /* Pods-AdvertileSDK_Tests-dummy.m */; };
+		5B30A687808588EC4960ECE31533C2AE /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5D4E8A0934A7F88FF55379C8DDFB96 /* ReplaceMe.m */; };
 		6DEFAA2A430A55BAD0B5EFC3F4ECE26E /* Pods-AdvertileSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4946A6E0784A5A2FDB4D50CB7C4F6F70 /* Pods-AdvertileSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E55972EBFDC39475A4F04AA5616E2F8 /* Pods-AdvertileSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEB5C2DE399816E2AB84162B5D679573 /* Pods-AdvertileSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D77D0B49BB917F3E96D094BBA7D92D00 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = C30CB278E9878EE418FA09B2994ABDA7 /* ReplaceMe.m */; };
 		DCE35C57C301566FB50931C6DAEC8D7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		E13807D0817E81C587A9E3A94D529785 /* AdvertileSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ECC7E1505248CB3EF7D17E600D2E0E /* AdvertileSDK-dummy.m */; };
+		E45710422C4CB5B8C77A757978B77975 /* AdvertileSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5983EC31204579F29EC57279298E2542 /* AdvertileSDK-dummy.m */; };
 		FE5CA95B0F0CC786E2C377BBE47160F6 /* Pods-AdvertileSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EA969441646AC2F87BCF836B8D025A /* Pods-AdvertileSDK_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -31,34 +33,36 @@
 
 /* Begin PBXFileReference section */
 		03A92AAF9292B7630A7F3BA18F1CDD0D /* AdvertileSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdvertileSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0935751D342586B16BCD3DA71274C2AC /* AdvertileSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AdvertileSDK.modulemap; sourceTree = "<group>"; };
+		0C5D96B13541FFF124347CDFE83C3AB2 /* AdvertileSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AdvertileSDK-prefix.pch"; sourceTree = "<group>"; };
+		0D777586941EA286365D010AC6FADADB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DEB10B5640C69FF03D55153CF85CF14 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3918EA78D8113322489DDA84B1853886 /* Pods-AdvertileSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AdvertileSDK_Tests.modulemap"; sourceTree = "<group>"; };
 		41C445DF903C077D21FBB6AA6E739FCA /* Pods-AdvertileSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdvertileSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		48DC60C1BDD71ECC1E66DBA2B49413D3 /* Pods-AdvertileSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdvertileSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4946A6E0784A5A2FDB4D50CB7C4F6F70 /* Pods-AdvertileSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdvertileSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		494D7E321D748D4A000332FD /* AdvertileSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdvertileSDK.h; path = AdvertileSDK/AdvertileSDK/Classes/AdvertileSDK.h; sourceTree = "<group>"; };
+		494D7E331D748D4A000332FD /* AdvertileSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdvertileSDK.m; path = AdvertileSDK/AdvertileSDK/Classes/AdvertileSDK.m; sourceTree = "<group>"; };
 		4B6E44DB4C8DF0F7D3684EBFAE7139DD /* Pods-AdvertileSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdvertileSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4CF9A4E199DAF355093CE16A96BC5CC9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EBB553C5323BE553FA9EF44A90024FA /* Pods_AdvertileSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvertileSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56EA969441646AC2F87BCF836B8D025A /* Pods-AdvertileSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdvertileSDK_Example-dummy.m"; sourceTree = "<group>"; };
-		58BF5F1ECEAD5AD9C6CF1CB818D8E9E4 /* AdvertileSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AdvertileSDK-prefix.pch"; sourceTree = "<group>"; };
-		62ECC7E1505248CB3EF7D17E600D2E0E /* AdvertileSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AdvertileSDK-dummy.m"; sourceTree = "<group>"; };
+		5983EC31204579F29EC57279298E2542 /* AdvertileSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AdvertileSDK-dummy.m"; sourceTree = "<group>"; };
+		648B19EBE82984D12A545AA62BA7C16B /* AdvertileSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AdvertileSDK-umbrella.h"; sourceTree = "<group>"; };
 		70A4137ECFE1DA1B6FB3C852ECBD253E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		790CA40C7CF4C13558741D10E38BE049 /* AdvertileSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AdvertileSDK.xcconfig; sourceTree = "<group>"; };
 		7CE8FE2E386AD3485CA17B9B57B3C50E /* Pods-AdvertileSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdvertileSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8FAD3BECB12AF93C65D287E8D4075966 /* Pods-AdvertileSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdvertileSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
 		90696F5A817C508A123ABDECFC136EFA /* Pods-AdvertileSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AdvertileSDK_Example.modulemap"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		974F4A59EE9C83E48AE1B5A9191C05E4 /* Pods-AdvertileSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdvertileSDK_Example-resources.sh"; sourceTree = "<group>"; };
 		A7A912985F06AB38278CB64545A2B6E5 /* Pods-AdvertileSDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdvertileSDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		AD5D4E8A0934A7F88FF55379C8DDFB96 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = AdvertileSDK/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		B8C8C1F7A246E637536F808F8BF505D3 /* Pods-AdvertileSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdvertileSDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		BB10A136D0C90F347E73D1FE23492C58 /* Pods_AdvertileSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvertileSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C30CB278E9878EE418FA09B2994ABDA7 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D291697DDF45D0DB0B65D4976B627B9F /* Pods-AdvertileSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdvertileSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D30BC9B27A20D8706EDD0649A4C85439 /* Pods-AdvertileSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdvertileSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DFC1AA4F7B280F1B3B4764D3E4428893 /* AdvertileSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AdvertileSDK-umbrella.h"; sourceTree = "<group>"; };
+		D37971F3AA37D626ACCBB3DA54B0A648 /* AdvertileSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AdvertileSDK.modulemap; sourceTree = "<group>"; };
 		E0F54C8CB72F326D172652E22A7C2996 /* Pods-AdvertileSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdvertileSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EC1AF09DE08BF4EE676F94F48ADD9960 /* AdvertileSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AdvertileSDK.xcconfig; sourceTree = "<group>"; };
 		F7AD07A9020E06D2C07EEE74347D27AA /* Pods-AdvertileSDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdvertileSDK_Tests-resources.sh"; sourceTree = "<group>"; };
 		FDED8A54D5F4BB3E3AC56DFEA0E9B5F0 /* Pods-AdvertileSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdvertileSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FEB5C2DE399816E2AB84162B5D679573 /* Pods-AdvertileSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdvertileSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -118,6 +122,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		5B64865C2FAEC80A72F0F26B1C84C16E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE84061E3C3F99F1986BDD0375D867FF /* AdvertileSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		656A2D30D415274B344B9A5EAD001C62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,14 +158,6 @@
 			path = "Target Support Files/Pods-AdvertileSDK_Example";
 			sourceTree = "<group>";
 		};
-		7632590F6AF3CCBE4C69F4FFA27EA506 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DA92174E010A2CD812A2BC952B2C03A2 /* AdvertileSDK */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		7BC8DC04247294665B96CE74AB5557C7 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,20 +170,28 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
+				494D7E321D748D4A000332FD /* AdvertileSDK.h */,
+				494D7E331D748D4A000332FD /* AdvertileSDK.m */,
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				7632590F6AF3CCBE4C69F4FFA27EA506 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				5B64865C2FAEC80A72F0F26B1C84C16E /* Pods */,
 				656A2D30D415274B344B9A5EAD001C62 /* Products */,
 				7BC8DC04247294665B96CE74AB5557C7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A20C17CC4D7CBC9D79CAFD3DE1EEF0E2 /* Classes */ = {
+		BBD6C345EE916F1CE6BE58786CB1C79E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C30CB278E9878EE418FA09B2994ABDA7 /* ReplaceMe.m */,
+				D37971F3AA37D626ACCBB3DA54B0A648 /* AdvertileSDK.modulemap */,
+				EC1AF09DE08BF4EE676F94F48ADD9960 /* AdvertileSDK.xcconfig */,
+				5983EC31204579F29EC57279298E2542 /* AdvertileSDK-dummy.m */,
+				0C5D96B13541FFF124347CDFE83C3AB2 /* AdvertileSDK-prefix.pch */,
+				648B19EBE82984D12A545AA62BA7C16B /* AdvertileSDK-umbrella.h */,
+				0D777586941EA286365D010AC6FADADB /* Info.plist */,
 			);
-			path = Classes;
+			name = "Support Files";
+			path = "../Target Support Files/AdvertileSDK";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -190,36 +202,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C70305FAA4387696AEE0E8BB00DB4490 /* Support Files */ = {
+		DE84061E3C3F99F1986BDD0375D867FF /* AdvertileSDK */ = {
 			isa = PBXGroup;
 			children = (
-				0935751D342586B16BCD3DA71274C2AC /* AdvertileSDK.modulemap */,
-				790CA40C7CF4C13558741D10E38BE049 /* AdvertileSDK.xcconfig */,
-				62ECC7E1505248CB3EF7D17E600D2E0E /* AdvertileSDK-dummy.m */,
-				58BF5F1ECEAD5AD9C6CF1CB818D8E9E4 /* AdvertileSDK-prefix.pch */,
-				DFC1AA4F7B280F1B3B4764D3E4428893 /* AdvertileSDK-umbrella.h */,
-				4CF9A4E199DAF355093CE16A96BC5CC9 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/AdvertileSDK";
-			sourceTree = "<group>";
-		};
-		CACCFCCD54D5BEE821978DBCD569C4C3 /* AdvertileSDK */ = {
-			isa = PBXGroup;
-			children = (
-				A20C17CC4D7CBC9D79CAFD3DE1EEF0E2 /* Classes */,
+				AD5D4E8A0934A7F88FF55379C8DDFB96 /* ReplaceMe.m */,
+				BBD6C345EE916F1CE6BE58786CB1C79E /* Support Files */,
 			);
 			path = AdvertileSDK;
-			sourceTree = "<group>";
-		};
-		DA92174E010A2CD812A2BC952B2C03A2 /* AdvertileSDK */ = {
-			isa = PBXGroup;
-			children = (
-				CACCFCCD54D5BEE821978DBCD569C4C3 /* AdvertileSDK */,
-				C70305FAA4387696AEE0E8BB00DB4490 /* Support Files */,
-			);
-			name = AdvertileSDK;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +226,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494D7E341D748D4A000332FD /* AdvertileSDK.h in Headers */,
 				39304B31701C8C307ADDD80EEF3F24C1 /* AdvertileSDK-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C0180FD96D72AE737EF6BBE60571FFA /* Build configuration list for PBXNativeTarget "AdvertileSDK" */;
 			buildPhases = (
-				A1A7F16EB3DC05A0001E9DB6BF88CBE7 /* Sources */,
+				21D4A1F93D6A60AA424C7127EF3E8AEC /* Sources */,
 				1D84DE93A038A58E19DEF009F6905F9D /* Frameworks */,
 				B3BB59A0600107FDBEAB24659FD0A5A1 /* Headers */,
 			);
@@ -333,6 +323,16 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		21D4A1F93D6A60AA424C7127EF3E8AEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E45710422C4CB5B8C77A757978B77975 /* AdvertileSDK-dummy.m in Sources */,
+				494D7E351D748D4A000332FD /* AdvertileSDK.m in Sources */,
+				5B30A687808588EC4960ECE31533C2AE /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63885B00F3AEE358FEBF3D26ECB5D7FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,15 +346,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE5CA95B0F0CC786E2C377BBE47160F6 /* Pods-AdvertileSDK_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1A7F16EB3DC05A0001E9DB6BF88CBE7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E13807D0817E81C587A9E3A94D529785 /* AdvertileSDK-dummy.m in Sources */,
-				D77D0B49BB917F3E96D094BBA7D92D00 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +434,7 @@
 		};
 		61017D0ADCCEB96FC34C8EB86B65F33F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 790CA40C7CF4C13558741D10E38BE049 /* AdvertileSDK.xcconfig */;
+			baseConfigurationReference = EC1AF09DE08BF4EE676F94F48ADD9960 /* AdvertileSDK.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -538,7 +529,7 @@
 		};
 		B0EB5FE265CC226DA8AC1A940339B0BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 790CA40C7CF4C13558741D10E38BE049 /* AdvertileSDK.xcconfig */;
+			baseConfigurationReference = EC1AF09DE08BF4EE676F94F48ADD9960 /* AdvertileSDK.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
