@@ -1,0 +1,35 @@
+#import <UIKit/UIKit.h>
+
+#import "SwrveConversation.h"
+#import "SwrveConversationCampaign.h"
+#import "ISHPermissionCategory.h"
+#import "ISHPermissionRequest+All.h"
+#import "ISHPermissionRequest+Private.h"
+#import "ISHPermissionRequest.h"
+#import "ISHPermissionRequestAddressBook.h"
+#import "ISHPermissionRequestLocation.h"
+#import "ISHPermissionRequestNotificationsRemote.h"
+#import "ISHPermissionRequestPhotoCamera.h"
+#import "ISHPermissionRequestPhotoLibrary.h"
+#import "SwrveBaseCampaign.h"
+#import "SwrveButton.h"
+#import "SwrveCampaign.h"
+#import "SwrveCampaignStatus.h"
+#import "SwrveImage.h"
+#import "SwrveInterfaceOrientation.h"
+#import "SwrveMessage.h"
+#import "SwrveMessageController.h"
+#import "SwrveMessageFormat.h"
+#import "SwrveMessageViewController.h"
+#import "SwrvePermissions.h"
+#import "SwrvePrivateBaseCampaign.h"
+#import "SwrveTalkQA.h"
+#import "Swrve.h"
+#import "SwrveInternalAccess.h"
+#import "SwrveReceiptProvider.h"
+#import "SwrveResourceManager.h"
+#import "SwrveSwizzleHelper.h"
+
+FOUNDATION_EXPORT double SwrveSDKVersionNumber;
+FOUNDATION_EXPORT const unsigned char SwrveSDKVersionString[];
+

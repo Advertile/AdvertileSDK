@@ -1,0 +1,6 @@
+framework module AbTrackingLib {
+  umbrella header "AbTrackingLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

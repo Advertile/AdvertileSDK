@@ -2,7 +2,7 @@
   "name": "AdvertileSDK",
   "version": "0.1.0",
   "summary": "A short description of AdvertileSDK.",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "TODO: Library to track events in some libraries and open external urls.",
   "homepage": "https://github.com/<GITHUB_USERNAME>/AdvertileSDK",
   "license": {
     "type": "MIT",
@@ -18,5 +18,13 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "AdvertileSDK/Classes/**/*"
+  "source_files": "AdvertileSDK/Classes/**/*",
+  "dependencies": {
+    "SwrveSDK": [
+
+    ],
+    "AbTrackingLib": [
+
+    ]
+  }
 }

@@ -7,66 +7,538 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		286C60212764E3C4A805CF91B35FD0C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		001C81573C978505F90410B9A37E8B68 /* SwrveMessageFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = F006F1B3D96151EC017F60ABB4598F68 /* SwrveMessageFormat.m */; };
+		0029D8592C815E9AB50DEDC54D601C9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD169AD926613FA8BB174947FF6CF14F /* Foundation.framework */; };
+		0046D3CA8B9FCF354BEB2AE188227485 /* SwrveContentVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = BE8802DBBA8D682F715A566E2A98FBC2 /* SwrveContentVideo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		019B126F9024F261D27DAC64B49CB1E1 /* SwrveConversationResource.m in Sources */ = {isa = PBXBuildFile; fileRef = D51499F4CD19FDFB98C8BF90F3FC3803 /* SwrveConversationResource.m */; };
+		04909740BC79ED4464971D9C5AD482BF /* SwrveConversationStyler.h in Headers */ = {isa = PBXBuildFile; fileRef = B5D362AA7CF1C93769832E40488C2B84 /* SwrveConversationStyler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05FD63AC1598A449761B6B33A184DFC1 /* SwrveSignatureProtectedFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 758881DEE37699FB4E67D726E0587E5B /* SwrveSignatureProtectedFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		064B8FB6D4E7BF39652BAF50D94390DC /* ISHPermissionRequest+All.h in Headers */ = {isa = PBXBuildFile; fileRef = A701445E7B3F4D9AE362377995D26418 /* ISHPermissionRequest+All.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B73D6E1AC01095697AA49C6715DA87 /* AbTrackingLib.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C24C20FB8A9080F2A494F4C21E8BBEA1 /* AbTrackingLib.bundle */; };
+		0701945BD20F12188FC177E6710841EF /* ABTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C67CC822A5F70849C77C7A0DEB6BB0 /* ABTracker.m */; };
+		074ECB9B51BCF5B18CE4170E78B57009 /* cvsr_grouped_cell_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E00E3F8B63D19FEDA15DB74EF52BD99 /* cvsr_grouped_cell_top.png */; };
+		0AEA40E2CB67FE3097F38B87BE7BAD2A /* SwrveConversationPane.h in Headers */ = {isa = PBXBuildFile; fileRef = F9764D4A7B747162F0618824D14B7403 /* SwrveConversationPane.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E3329703CFA0E736B66237231B225BB /* SwrveInputItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EF8D3412AC5D2C3C280D743F806D551 /* SwrveInputItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F411DCF41DB9204DEA70793C9F4A1EF /* cvsr_grouped_cell_top_tapped@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F3BD55DA765BF81810AA3BF8E76262 /* cvsr_grouped_cell_top_tapped@2x.png */; };
+		0FD09E0A8E9E2BA6E03FA383DAD8B147 /* SwrveConversationSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7BFECEE52A3D29D8A94E222ADBB849 /* SwrveConversationSDK.framework */; };
+		10AB51B43D405DDD89472A57D07E6347 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF031CEE80AADA1E44E34A0CA0A9C5B /* MessageUI.framework */; };
+		12B56CD7C2CAC3B175A368F0EE5C53EA /* SwrveCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 306A3F7BB95DC39CE184BA62CDBCBF61 /* SwrveCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12C64F3E8F9D57EFD8AEAC3D6A426AF5 /* SwrveConversationContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F339CA190961A114F23250090CA326A9 /* SwrveConversationContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15C45A265C69C0408ED92E0F65E170EA /* SwrveCommonConnectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FC10C64C37F461673D35F16A665DB0 /* SwrveCommonConnectionDelegate.m */; };
+		166DBA6CC9D2D17DDC7DD205F86B86A1 /* ABTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FCA7978CC855D0F9844B98EEDEA8744 /* ABTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16E63776004C0D9563906AC5B15B326C /* SwrveConversationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A51997B272663A9D359E88722C55BC1E /* SwrveConversationButton.m */; };
+		18EED215954BC246DBE791B5DF8C8842 /* SwrvePermissions.m in Sources */ = {isa = PBXBuildFile; fileRef = E44AB926AB57A9E3C76C113C30568077 /* SwrvePermissions.m */; };
+		1A8BE2F7186876B5DEC666AEF8E0233C /* SwrveCommonConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CACC6E2DAAD167B5BCFED8B4132F6C5 /* SwrveCommonConnectionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D36825D890E7F3F712C34A2B52488AD /* SwrveContentStarRatingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6136731837AB655279CA11F3337B7B8A /* SwrveContentStarRatingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D4634CFCF99EE6B6B1D20BE37EF8BAD /* SwrveTalkQA.h in Headers */ = {isa = PBXBuildFile; fileRef = 84CF0AA2C131D87CABDAD2FF87CBCAD1 /* SwrveTalkQA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F529EB1D43F7CFEC1766523F8FADC43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD169AD926613FA8BB174947FF6CF14F /* Foundation.framework */; };
+		2099DA3AFA3EC1B459A0B6B6D0C05BEB /* SwrveContentStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDDB05CCB6724F1615B0FBC44499F79 /* SwrveContentStarRatingView.m */; };
+		218A0A70E613B70E3866C59BD81BFDF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD169AD926613FA8BB174947FF6CF14F /* Foundation.framework */; };
+		243717D7CDFA3FBC4B554000D401C05A /* SwrveConversationAtomFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 810AD898F128958142207E4FF47B2F33 /* SwrveConversationAtomFactory.m */; };
+		25189C709074EAB063A4F10360BADAA6 /* ISHPermissionRequestAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = F9186C15631D8E30630BB1B270984BC0 /* ISHPermissionRequestAddressBook.m */; };
+		25D58396DA023E6AA21795E6ED07B0E4 /* cvsr_grouped_cell_mid_tapped.png in Resources */ = {isa = PBXBuildFile; fileRef = EA0D4E4A3C41425427217071C36F486F /* cvsr_grouped_cell_mid_tapped.png */; };
+		25F267A008D12A5A25C18DBE099BDB7C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5BCC955489C25F9C991DAFBD2B296C1 /* QuartzCore.framework */; };
+		268BC8BC3EF3B5F89E1A853767EBE798 /* SwrveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30071147ED49FEEC80953469EB22ED77 /* SwrveSDK.framework */; };
+		26E33438E233D24534EBD8007BFBF4F2 /* SwrveConversationItemViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 842A7D075BC7BABDF9D0B935A04CA70D /* SwrveConversationItemViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		286C60212764E3C4A805CF91B35FD0C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD169AD926613FA8BB174947FF6CF14F /* Foundation.framework */; };
+		2B2550846E5FC1BB38F793CB475B610F /* cvsr_grouped_cell_single_tapped@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E60F5E404EA4F26458E8F4F824633CF /* cvsr_grouped_cell_single_tapped@2x.png */; };
+		2D04290C77434BC9462D41A7A80ED96E /* SwrveMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6FCFB52EAE7DADEF8A271A5D65C944 /* SwrveMessage.m */; };
+		2D56EA6C125B8E2B947A3519BD648AC7 /* cvsr_grouped_cell_top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D02AEA42EC37112D2D8616256D766437 /* cvsr_grouped_cell_top@2x.png */; };
+		306B6F5642615DC02E528171A830BF9D /* SwrveSetup.h in Headers */ = {isa = PBXBuildFile; fileRef = 643259FD21DA8366B4BFE96EF97EF82A /* SwrveSetup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		311DA1631C8782004046B3F601BE62BE /* SwrveConversationUIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A6788717BA24653CBEED75A3E93BECB2 /* SwrveConversationUIButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31D96FA542A9BCEB5DEA41D055C031F3 /* SwrveSignatureProtectedFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EAD8CC49C8BE06AF01AF9DC9AEC32 /* SwrveSignatureProtectedFile.m */; };
+		3347A2DE54EE6451FB4699DA24466218 /* cvsr_grouped_cell_mid.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D91B5A59A07C759135EEE64526FFD /* cvsr_grouped_cell_mid.png */; };
+		344EF6B729309CA7A4D7FCD7F53E88A5 /* SwrveMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BCFB85EEAE6228D312637C4CE98FA11 /* SwrveMessageViewController.m */; };
+		34E3ED47462947DA47EC048CFAB6D888 /* ISHPermissionRequestPhotoLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = BDD822F22E73967F725F17A80398C0C7 /* ISHPermissionRequestPhotoLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3557F42C0F5608BA50843D2BA71F54B0 /* SwrveConversationEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 283672C547CAD39AC11A1C2831F62101 /* SwrveConversationEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3576F5E2838A3B848CF0C56F705CE347 /* SwrveMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DAAD5B0BA40F95AAF87854ACC42A32 /* SwrveMessageController.m */; };
+		383237F05213FB59AF245DA731A2DB42 /* SwrveConversationSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED34A08C76EA4CC5BC578AFA083858B2 /* SwrveConversationSDK-dummy.m */; };
+		39B2313B0DAF0204D92351874E2839D2 /* SwrveSwizzleHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = CF241A29739C6707FDC463EBE05C73F4 /* SwrveSwizzleHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A6BAD420EAB49F3CCE3ABFDE2C6FC41 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7701B441CF865943257AAEA39226AC90 /* AddressBook.framework */; };
+		3E6DFC84E92DC3FC76C1152EF4ACE198 /* AdvertileSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC1AA4F7B280F1B3B4764D3E4428893 /* AdvertileSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EBE608ACDBA1D2E5345242B6958D549 /* cvsr_grouped_cell_bottom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E1FA64FC90D890D924F0A10D3E331FB /* cvsr_grouped_cell_bottom@2x.png */; };
+		3FD78522169A3104AD1B3570B0090141 /* SwrveContentHTML.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F9C9647BA2BCCA68CB108C93C6E081 /* SwrveContentHTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4080DC78C8B6EE1FF3A9907E1FDF64B5 /* SwrveConversationPane.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF6B2D496C868F53675E152DC5DC0DE /* SwrveConversationPane.m */; };
+		4351C26BFF4AB71ADD43FA70E535ED3B /* SwrveMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C791E70176EAAEF14864269F74B1C49 /* SwrveMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		445A5E54A593DDB41F44EC82FD131E54 /* SwrveConversationsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D243EE8A440BA09048F3C44FBFCA5136 /* SwrveConversationsNavigationController.m */; };
+		44763B16CD156D606E6F3CC00C04236D /* SwrveConversationButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C3F09BE1E031012C162B6E8799945D /* SwrveConversationButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		448187D950714D44906F7AA5746CCF19 /* SwrveInterfaceOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 28153A474946CC89AC09ADF5DCB0C43B /* SwrveInterfaceOrientation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		454AC1A9A059606384F366CB56DA3815 /* SwrveContentSpacer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F92E46717FC0F247B6FC2ADF921A2CC /* SwrveContentSpacer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45DFFEC806FEF85B539A57B49146BAFA /* ISHPermissionRequestPhotoCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = C1EF733DBB3E856F95C10AFA48A019E9 /* ISHPermissionRequestPhotoCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47A67C3740D2A5ABB3BEB70E8E80425D /* AbTrackingLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC1222F8F55979ACF9693F911222EE3D /* AbTrackingLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48D848A6924E1167BE1BDFBBC9D035CA /* SwrveConversationAtomFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = F93EA0DE75B438383CA5881948F91EDC /* SwrveConversationAtomFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		494D7E381D749264000332FD /* AdvertileSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 494D7E361D749264000332FD /* AdvertileSDK.h */; };
+		494D7E391D749264000332FD /* AdvertileSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 494D7E371D749264000332FD /* AdvertileSDK.m */; };
+		4A8A6B4A26A9E222F03895E4A2DBE1E8 /* SwrveCampaignStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1EE4FF86195E6625D14B3E23654A7E /* SwrveCampaignStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CADF060CD5CB49D269D76CC51D2E170 /* SwrveSDKCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FE56A56A0FEC66E415835EDA5461C3 /* SwrveSDKCommon.framework */; };
+		4CC9B313455DC05179A2B6F0C84A018F /* ISHPermissionRequestNotificationsRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = E648391CB1ED1134FE715F2B5BF826F9 /* ISHPermissionRequestNotificationsRemote.m */; };
+		4D00FD35BF5ED6B40847033B636D6B69 /* SwrveCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 62DEEBAD2D90DB3180A195D312A3BFF8 /* SwrveCommon.m */; };
+		4F69AF6CC6640A41119E40E950C6A6D4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0630A72CEF8381029EEF3BA63DE8760A /* Security.framework */; };
+		519CEF44D15F007A3869C88F57EA1C04 /* star-empty.png in Resources */ = {isa = PBXBuildFile; fileRef = F57927282EDC1C5B8EBB0651C8CDAE53 /* star-empty.png */; };
+		53A9BC9E4AF8FEA69D64E1D59441E651 /* cvsr_grouped_cell_mid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A473D5757CB0A70417DA7B183C4853 /* cvsr_grouped_cell_mid@2x.png */; };
+		553A63CEA7144B71FDE8CB31032BA2EC /* SwrveSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD5E2001ECF179A061EE6F4929699882 /* SwrveSDK-dummy.m */; };
+		567E78303263AD710591202DEFAA7E10 /* SwrvePrivateBaseCampaign.h in Headers */ = {isa = PBXBuildFile; fileRef = 15FF06E51FB112A32FD72492D6B175A1 /* SwrvePrivateBaseCampaign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5882D6876A78409DDDEB81E05E2C6FB9 /* cvsr_grouped_cell_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A31C215D07809EE9AC165EDFBEEBB0E /* cvsr_grouped_cell_bottom.png */; };
+		59C5F33575751C327B65A7E09F373114 /* SwrveResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F774EFE97E6E4DBE0E8E0FB832E3F4 /* SwrveResourceManager.m */; };
+		5A1615DCC5B4A6FF9F6704AF7D83B2BB /* cvsr_grouped_cell_mid_ios7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2874863A2D4C93679B742F7DC8659011 /* cvsr_grouped_cell_mid_ios7@2x.png */; };
 		5A3FF064B4B0670D6F2E4DE16901B253 /* Pods-AdvertileSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C8C1F7A246E637536F808F8BF505D3 /* Pods-AdvertileSDK_Tests-dummy.m */; };
-		6DEFAA2A430A55BAD0B5EFC3F4ECE26E /* Pods-AdvertileSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4946A6E0784A5A2FDB4D50CB7C4F6F70 /* Pods-AdvertileSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AFFCE8F059C26F6A1C3E3DE9407AF48 /* SwrveCampaign.m in Sources */ = {isa = PBXBuildFile; fileRef = 9361A44789B6CEACD025421E81D18856 /* SwrveCampaign.m */; };
+		5B4A3EECBEB8417BCF835AF7066F015F /* SwrveCampaign.h in Headers */ = {isa = PBXBuildFile; fileRef = 03FB19ED2526004F2CE0DDD10883CF2B /* SwrveCampaign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D2B75A227F05AD27A78F9316F14D93D /* SwrveConversation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC76E2D3DCB2187AAE07382940998CBA /* SwrveConversation.storyboard */; };
+		5E30178BAEFD1B822BDACCC59659276F /* cvsr_keyboardBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19029185C06E35422F8EDD69A0353941 /* cvsr_keyboardBackground@2x.png */; };
+		5E3E73B5AF90692D442528DFC7FB7D24 /* cvsr_grouped_cell_bottom_tapped@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D04738081C7CD38656D38AB0F93E1221 /* cvsr_grouped_cell_bottom_tapped@2x.png */; };
+		5FB2ED7C51075F46DA9F3DABC3DB1E9E /* cvsr_grouped_cell_bottom_ios7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26568311741E6D1EAAF3FF3CB56666F6 /* cvsr_grouped_cell_bottom_ios7@2x.png */; };
+		5FBC7218F9BBB263CEE8B1382B348FAB /* SwrveSDKCommon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CDFC0443688ED4D0F0E19C4EFA3086C /* SwrveSDKCommon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		677A192DC08F43FF0E07D23F66F8B036 /* SwrveSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93821BADEC5E838F3204F5F4712A6027 /* SwrveSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67A0D78E3C1CE7F77B890326EF9D2656 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2510F26339CA6A09E013B196A933A315 /* Contacts.framework */; };
+		6CCDE31701ECB5AF48EFA6110A370B7F /* Pods-AdvertileSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4946A6E0784A5A2FDB4D50CB7C4F6F70 /* Pods-AdvertileSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D63EA34E1F517996A805BA177841148 /* close_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73890E71A4A1DCE65A7917BA27C334BB /* close_button@2x.png */; };
+		6D71D2CCE32AD8AE2798F1D42BF0A38B /* NSURLConnection+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 702926581EEB6FDEFD4C8AC8DD18F864 /* NSURLConnection+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EE5004D68C4895A7DA24DDF22A4509B /* SwrveConversationContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4BA6F3E540BF51060FD8D46D9525E5 /* SwrveConversationContainerViewController.m */; };
+		6FA1B0BF8FB211D462C54F468D471440 /* cvsr_grouped_cell_single_ios7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEDEF403C01DC1EC0352498762CA3C54 /* cvsr_grouped_cell_single_ios7@2x.png */; };
+		73DB26507A76892105A98FC91AE52418 /* SwrveConversationAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 8182BE4C15E949F6DB317650CE0FE70D /* SwrveConversationAtom.m */; };
+		747DD037D3AC7F518AEADADDCA7EF37C /* SwrveConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1703D259C40C359DE8F2F96B683BBB /* SwrveConversation.m */; };
+		757D544959F0495CF574E696F8841E47 /* ISHPermissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 10508E425C4D3EF3A4AFF3CC077A54CB /* ISHPermissionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76571F2C38DC399E36F9D1C40001412D /* SwrveSwizzleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D98755D78ED8892CB92F04F773D180 /* SwrveSwizzleHelper.m */; };
+		76662D0AA36990BF765C5F49394C8698 /* SwrveConversationUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E53E96962AE908CCC5DD076CB49ED2E6 /* SwrveConversationUIButton.m */; };
+		76A2507CD9E24F546ACBBA57E22E5E49 /* Pods-AdvertileSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EA969441646AC2F87BCF836B8D025A /* Pods-AdvertileSDK_Example-dummy.m */; };
+		7750A3E4304123FC838104F67B69A40D /* SwrveConversationItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B54C84B83359A36E702F695166F154 /* SwrveConversationItemViewController.m */; };
+		79C18730959A5AEE0F7784CE8CAFB381 /* SwrveContentImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D89735400F7A9329AEE494DB36ECE62E /* SwrveContentImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B85381AABE808E8F0BE7F258104C208 /* AbTrackingLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E364B59E22AB3E60C0014142FE263E0 /* AbTrackingLib.framework */; };
+		7CA96F453C4EEC2229781BDD17787488 /* AbTrackingLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A08C1222A77E97FB9F720A73D5DC9EC /* AbTrackingLib-dummy.m */; };
+		7D5832F3352A87829AF2E1002613E3C7 /* cvsr_grouped_cell_single_ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C277CB8CC3BC5F6A1E56961A1D2D55C /* cvsr_grouped_cell_single_ios7.png */; };
+		7D59F4C466DB236AD02BC6F99C8DBB76 /* SwrveConversationSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD932BD7167BF09432860FC07F533E14 /* SwrveConversationSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E1966A6A5DF068C9E3D9DC7C740F103 /* SwrveContentVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD948309BF94225800FCA00245D84E4 /* SwrveContentVideo.m */; };
+		7EBF9E45376C60F08438690AF107ED8E /* cvsr_grouped_cell_bottom_tapped.png in Resources */ = {isa = PBXBuildFile; fileRef = 516876F86FDFFF4D5E35C3C58F7E0569 /* cvsr_grouped_cell_bottom_tapped.png */; };
+		7FDF73095EBB209327805E27D2919E30 /* ISHPermissionRequestPhotoLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = B936A255616E2E07B507628799C3735A /* ISHPermissionRequestPhotoLibrary.m */; };
+		850E95231F8FC0EE0B0FD056688CC395 /* SwrveSDKCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FE56A56A0FEC66E415835EDA5461C3 /* SwrveSDKCommon.framework */; };
+		85F41BB637DB824116F6300D3952B1E0 /* SwrveMessageFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 514A024433D3D71F4685B56AE6619691 /* SwrveMessageFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		873C53EE72A7F5E3B649136BCE4CC21A /* ISHPermissionRequestNotificationsRemote.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E200E783FA086090D71DC0532A86770 /* ISHPermissionRequestNotificationsRemote.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B9103D6B6D821FD29E15A1E7DE4499D /* SwrveSDKCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33FE56A56A0FEC66E415835EDA5461C3 /* SwrveSDKCommon.framework */; };
+		8BB918A391DFF551361033B746A16874 /* UINavigationController+KeyboardResponderFix.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A956D9FD95B522577F9F97A21279F7 /* UINavigationController+KeyboardResponderFix.m */; };
+		8C021DF848166A84448459D9E745C566 /* SwrveContentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB2BCD237D5FD934768230FBE7C226E /* SwrveContentItem.m */; };
+		8CAE44F21B64226D45DC40E3F9ADDC9C /* NSURLConnection+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDC88F0473C675EC97D4AB79006995E /* NSURLConnection+Blocks.m */; };
+		8CF5B76CA97B516C344A0C54CB7F4CEA /* SwrveConversationAtom.h in Headers */ = {isa = PBXBuildFile; fileRef = 0213887DC60C645781A7ABC4AA87144D /* SwrveConversationAtom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D9426DF8F6B4AA0B0E7AA29A8ED5834 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060C547F50409CB808DBA6B532A6E943 /* UIKit.framework */; };
 		8E55972EBFDC39475A4F04AA5616E2F8 /* Pods-AdvertileSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEB5C2DE399816E2AB84162B5D679573 /* Pods-AdvertileSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		955C482A08809BE469A5AE9ADB27846C /* AdvertileSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B4B05C0045EFC4FC2F4795A4AE67CC /* AdvertileSDK-dummy.m */; };
-		B2A05BAD249F4E3E717ED744F9D6F00E /* AdvertileSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 46332524D1B4CDB6AEFFE880421B59BC /* AdvertileSDK.m */; };
-		C27039E94E25AFE93664FCFD8E713B97 /* AdvertileSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EF642030C91A26CD040815FC6188A6A /* AdvertileSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D53CC22EA30ACB4B6FF32552890FD402 /* AdvertileSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E7BE6DCD0602B0372ACDE214FE48D4B /* AdvertileSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCE35C57C301566FB50931C6DAEC8D7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		FD05E747F424F68C5AEED710ED74D271 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		FE5CA95B0F0CC786E2C377BBE47160F6 /* Pods-AdvertileSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EA969441646AC2F87BCF836B8D025A /* Pods-AdvertileSDK_Example-dummy.m */; };
+		9236AC4F297509E7623704F0EBEFDDFD /* cvsr_grouped_cell_top_ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 36BEAB317469EA5D44C4F642A196DFCC /* cvsr_grouped_cell_top_ios7.png */; };
+		932D9C9C60C8A675D0BBE93586AF1CF8 /* cvsr_grouped_cell_top_ios7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A46D70457A94F26BA05247A1CDF4D6A0 /* cvsr_grouped_cell_top_ios7@2x.png */; };
+		938C7F9C97E30846A51ACC65BF06FF1E /* VGConversationKitResources-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13B979F2C61C73E1F9CB6B916F52706D /* VGConversationKitResources-Info.plist */; };
+		94344840E359F66DE99EE46C6913D6CE /* star-full.png in Resources */ = {isa = PBXBuildFile; fileRef = C6CA4E65FF81B997D86782EE572B3E09 /* star-full.png */; };
+		958769A5C8CD71429DD18CD163847866 /* SwrveInputMultiValue.h in Headers */ = {isa = PBXBuildFile; fileRef = B8C015A0F6834F8D8810E981E59CF43F /* SwrveInputMultiValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		963CE6D6B00B0EAD96A4D59A2733C93B /* SwrveConversationCampaign.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB73BA2AB2C014CD819D3782F61CD04 /* SwrveConversationCampaign.m */; };
+		969455FDB5F12D2FDF7AF879CA50A2E6 /* star-full@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36B48F44EA5D18859B21416611E09B85 /* star-full@2x.png */; };
+		969986A117C67702659370415C54841E /* AdvertileSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ECC7E1505248CB3EF7D17E600D2E0E /* AdvertileSDK-dummy.m */; };
+		97A1F2A0CDD7ABD6B4EA63B7D1C4DC73 /* ISHPermissionRequest+All.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC9003FA604F981FBC9855C41505FC2 /* ISHPermissionRequest+All.m */; };
+		99E31901E7B5653F49D094CBE92DFFDF /* ISHPermissionRequestPhotoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B85BDBB778EA045E1EC629682FA8B30 /* ISHPermissionRequestPhotoCamera.m */; };
+		9A4236F6FF4A9EB37CF30386C7BA7B90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD169AD926613FA8BB174947FF6CF14F /* Foundation.framework */; };
+		9AC35EE6EB99788DDAB60ADB4A628534 /* SwrveImage.h in Headers */ = {isa = PBXBuildFile; fileRef = A19E7245DB61463083C42087C7A14144 /* SwrveImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BA76A9085DDCE5C0028E2C11DFD3FF2 /* ISHPermissionRequestAddressBook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AF7E61FBF41BD61125AD0B22A0C177D /* ISHPermissionRequestAddressBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0D6BB6F12ADF858BFD74E0C95219897 /* SwrveContentItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 19D00BD0D9B99DE5012EFFEFA1929BBE /* SwrveContentItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0DEA5CB35244078E48C1F394300B789 /* SwrveReceiptProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C5EFEB9C6C35358C5C9AFFBA5957A /* SwrveReceiptProvider.m */; };
+		A19BA8E98FC8B638FDF5DE8AACAD1861 /* cvsr_grouped_cell_top_tapped.png in Resources */ = {isa = PBXBuildFile; fileRef = 569112CB9ABFD40697E8E6B82B1EA940 /* cvsr_grouped_cell_top_tapped.png */; };
+		A1D063333D286C3EB91CD30E7BB1D343 /* ISHPermissionRequestLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3A551DB7C380CD718DF5F18DB3A65D /* ISHPermissionRequestLocation.m */; };
+		A2F1F441E2027B13550D5C87A9A162F7 /* SwrveContentImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2175A912A5E79C4DF6ADE060FB5F35F6 /* SwrveContentImage.m */; };
+		A484F515C4C50C13BF7C8E91C8C8D8C1 /* SwrveConversationSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F7BFECEE52A3D29D8A94E222ADBB849 /* SwrveConversationSDK.framework */; };
+		A4D6DD00EFA122AF7E4FC0CFC0E504BF /* cvsr_grouped_cell_mid_tapped@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 907F93CC453EE1E07D1C5DDA1775FAE7 /* cvsr_grouped_cell_mid_tapped@2x.png */; };
+		A5D703848E3199E351B53E06EBF19943 /* Swrve.h in Headers */ = {isa = PBXBuildFile; fileRef = 98B4E65B83C8892F798FC2FB57146E38 /* Swrve.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7081D03A310D7CA00D1DE2B098BE4CA /* SwrveButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A435B7DFF87896C26D776B2BC3176D0B /* SwrveButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADC6783741966C306978833F6B1345E7 /* ISHPermissionRequest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9637499C7F76C34E12B9DD9E9AEDC06E /* ISHPermissionRequest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B02C770CB21B997F774CE0AD61A2DD43 /* SwrveInputMultiValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 95620427FF3E2C4ED98ED5FB20B9E1FC /* SwrveInputMultiValue.m */; };
+		B2165B8FE9381518E05769C7FF1A3F27 /* SwrveConversationStyler.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA97F82CC8F00A3ADF033FFF2ED0FB7 /* SwrveConversationStyler.m */; };
+		B3D82F1EF7416F6F31B33BF1FD8E3714 /* SwrveConversationsNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = F2D5EEA517DED139B8846C1D9ADE2C29 /* SwrveConversationsNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B45CB2631B83D3486EF5D467E1D6801D /* ISHPermissionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C96C68CE443B28C9F95D1361F92C4509 /* ISHPermissionRequest.m */; };
+		B4BDEF88C9612FCE8BEC3036F35E1A20 /* SwrveReceiptProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = CD685A7C41C06C767668D50861BA6022 /* SwrveReceiptProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B937D8170B71CC28EA3CE87AF92CE205 /* SwrveMessageController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D6159F84977537374A49CED647E24FD /* SwrveMessageController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9A01BA85EC7B9D85EE95AACD105FBA6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF60C86FA4646B9046EA3B4695B2B95 /* StoreKit.framework */; };
+		BC1AEE89C419AC1C9E5EF52B09A61C18 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7F895AD6DA2C983D9F7DFBDEE3B75F /* Photos.framework */; };
+		BCCDEB6E593BF087D9223520D04E82B9 /* SwrveMessageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D5DA43910D2C297F806B23C066F4777 /* SwrveMessageViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD4BFFF6BBF7B194AB8235CEDDBD076C /* cvsr_grouped_cell_bottom_ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BCABC1D6BB4E432009AF2632702DA62 /* cvsr_grouped_cell_bottom_ios7.png */; };
+		BD650205D39190F443EE4402B458D999 /* cvsr_grouped_cell_single_tapped.png in Resources */ = {isa = PBXBuildFile; fileRef = 12CE700FF2FDB19FCA04161F5DE9BB9E /* cvsr_grouped_cell_single_tapped.png */; };
+		C21F4D8762902AF870DC3FC9FAC91DB7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E9A38215E26AC5F53C07BAD5ADDE9E /* AVFoundation.framework */; };
+		C2EEC7BCE836221C09BE5871AA73F06C /* SwrveInternalAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E37CC1C018DE14031D5099833E1140 /* SwrveInternalAccess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C38541C844411983C523FEF0327305DD /* SwrveButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD267B135CF6020C56F37111EB38157 /* SwrveButton.m */; };
+		C53EB52B0BA4E6462A29E11E9CCDAA63 /* SwrveTalkQA.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A24EB4B0CFDFDC1947B486042410194 /* SwrveTalkQA.m */; };
+		C633999D7B10971BABC0E24AE60FB983 /* SwrveBaseConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A68B567C371297046CD431FF4E2875 /* SwrveBaseConversation.m */; };
+		C80446E7F56493F661F62B2F19B76A3D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E223EA4BDD35F3A1217F3F8BA0F444 /* CoreTelephony.framework */; };
+		C8DBD62E74540D7B8BBDC45EAE487339 /* SwrveSDKCommon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4328BE1D742487D928A61D22A6F47DF0 /* SwrveSDKCommon-dummy.m */; };
+		CB915C8CFDF40DD86385F5015A67FBB4 /* cvsr_grouped_cell_mid_ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C0C74A82453867A73F061623D0C6DC5 /* cvsr_grouped_cell_mid_ios7.png */; };
+		D04C06C53F7714B7FF0A10FC628C3D12 /* SwrveContentSpacer.m in Sources */ = {isa = PBXBuildFile; fileRef = 841155CC960088283E0E588ED585B2A2 /* SwrveContentSpacer.m */; };
+		D4FE58FDF5E5FFE4631463DE352F5D27 /* SwrveConversationEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = BE30E6F4EAA56B9E7626C09C3BDFE907 /* SwrveConversationEvents.m */; };
+		D64BA60DE90887022FBF0A28ACC145D7 /* cvsr_grouped_cell_single@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C30FAE2AB61F40F7123E027ADB8AD78F /* cvsr_grouped_cell_single@2x.png */; };
+		D64DCE0B817C7986B6F11E87840EE5A5 /* SwrveConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = CC0C1C9893D30A9C099EB38B64D1F260 /* SwrveConversation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D96B68023617D6DC9E031E9701141C9D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41AC8148B52A973A3678130DFAEC3B31 /* AssetsLibrary.framework */; };
+		DDCA53936976AED9F2C47DEB9EA5A24F /* SwrveBaseConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CA456FCB04C67D6D3D6644171FCE5D1 /* SwrveBaseConversation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE03756EE26447395BE8FD387906B447 /* SwrveBaseCampaign.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AFCAF986D997B6B58D02927B070FFB1 /* SwrveBaseCampaign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE602BC20BEFFF05253531CB29DC5E12 /* UIWebView+YouTubeVimeo.h in Headers */ = {isa = PBXBuildFile; fileRef = E3AE2DA61A03BC5D059D4490AEA695EE /* UIWebView+YouTubeVimeo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE800AD21002564DDD5832BB942BB875 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD169AD926613FA8BB174947FF6CF14F /* Foundation.framework */; };
+		DFFD84D8FE55464216EC58B43163443C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060C547F50409CB808DBA6B532A6E943 /* UIKit.framework */; };
+		E196E3838EE52F9D208AE3C438F60FCF /* cvsr_grouped_cell_single.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CB5B7D5490654F6A67A0196B325E08 /* cvsr_grouped_cell_single.png */; };
+		E4943B0156D57806FC833D4979D3EE87 /* SwrveConversationCampaign.h in Headers */ = {isa = PBXBuildFile; fileRef = 23282DAC1E86768D7BBF32635C6167F8 /* SwrveConversationCampaign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7984BDA3FC20CDA94B4772B5FF5D8E1 /* SwrveMessageEventHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 77B4D2BB0C53253A0D2903345C0EFC84 /* SwrveMessageEventHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E887AC532CF2824FAF44A859E6797315 /* close_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 439ACF8DB4E5F9C557D044B1AD0C645F /* close_button.png */; };
+		E8F1EC4232077DC04D156BC1A05F0DD4 /* SwrveContentHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A09CE7B902F25ADB373E1D97B67B12 /* SwrveContentHTML.m */; };
+		EB278C3E89F5103E1F304DAFBAB36503 /* SwrveResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EDC4E32166CDF8A596DABE3D22A06CE /* SwrveResourceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB467439DAF13582A87CD74901D302FF /* Swrve.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9C260A866CF36C77A21F816E923841 /* Swrve.m */; };
+		EB60193F7A3C4B37D1C07B9735068629 /* ISHPermissionRequestLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = E17127A792D5076401DB0458D8DA6AB4 /* ISHPermissionRequestLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECCD8DF00523348642D75753A7B97935 /* SwrveInputItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0071E5E9C8701AF4FA8075CF12137DE7 /* SwrveInputItem.m */; };
+		ED7BB39DCCE3F27641478389284E5D5F /* SwrveBaseCampaign.m in Sources */ = {isa = PBXBuildFile; fileRef = 21472AEE81480AA5882F730DA220E66C /* SwrveBaseCampaign.m */; };
+		ED7DD445EAC3709F93408D015A16819B /* cvsr_keyboardBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = FBB87243881B8FCD313F5C924F277366 /* cvsr_keyboardBackground.png */; };
+		EE801B2438ED6F041C6CC82B5B31926E /* SwrveImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 907E10A239C674FB3CFCB15BDC028B8F /* SwrveImage.m */; };
+		EFA38C8C89F840E3C6F3C2FF81286BDB /* SwrveConversationResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B7371E5009D0390BF236E1F2AD9425D /* SwrveConversationResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0459110607D312A18EC17A05C29EADC /* SwrvePermissions.h in Headers */ = {isa = PBXBuildFile; fileRef = A1C482B8C45632A26DFEF6AFB00A53CE /* SwrvePermissions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F184B3FE56411437D718CDBDFF3CB3CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD169AD926613FA8BB174947FF6CF14F /* Foundation.framework */; };
+		F294FBC1641B169369770611BE3A8920 /* SwrveContentStarRating.m in Sources */ = {isa = PBXBuildFile; fileRef = A8671FB8D448394D6DDB528B6E6EE8EB /* SwrveContentStarRating.m */; };
+		F754BB46B8DB128E512A97D3E997FA3E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C88045383ED27CF9BD53D0393AC4FA /* CoreLocation.framework */; };
+		F765BC6FA84FC6B34C581D64FA883051 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB85B46E5E8E5FA7AC5DBA4D75526B40 /* CFNetwork.framework */; };
+		FA31B3695A0468255EC2E49FED921AB6 /* SwrveContentStarRating.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F10ABF243339D29A359B7E45C9DDBF6 /* SwrveContentStarRating.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCA501D2235C338FD139CBA10F16AB7A /* ISHPermissionCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDA9C6C92E27CD08F62533E9DB16269 /* ISHPermissionCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD128C6FFFE7DB6C0F71F9225D4D2D49 /* star-empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5004449997A205CDFDCFA16DA32A926D /* star-empty@2x.png */; };
+		FD1B4C56010180A1726178ED489DB97C /* UIWebView+YouTubeVimeo.m in Sources */ = {isa = PBXBuildFile; fileRef = 942A7AFE6DE469863026CEF29DF049EE /* UIWebView+YouTubeVimeo.m */; };
+		FD394CA3726CE8C0F9B4EE0949E400C2 /* UINavigationController+KeyboardResponderFix.h in Headers */ = {isa = PBXBuildFile; fileRef = 2181F390A227254E0C90FB7322ECA009 /* UINavigationController+KeyboardResponderFix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4EA4A51D73A0D6F05AC0CC708CEF6FC8 /* PBXContainerItemProxy */ = {
+		025B3AABA82BCB556FC6C406E4FA7F2F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A570D0114AD1D51A692DF6B13E535698;
+			remoteGlobalIDString = 940007555684AE53CDE4C28B3C05C680;
+			remoteInfo = AbTrackingLib;
+		};
+		0FC00CE5A1D6082576359AA5F35D6CE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF5D8AFD2235153534269228172482D;
+			remoteInfo = SwrveConversationSDK;
+		};
+		269E2E50E475163B1EA7D3AFD7516961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDA22FA12F4620528DCCFB018F338009;
+			remoteInfo = SwrveSDKCommon;
+		};
+		2DCEE6B9A19EF33A12BF5DBC24307BED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF5D8AFD2235153534269228172482D;
+			remoteInfo = SwrveConversationSDK;
+		};
+		4118459C7BF268DF50D44F131F9F6B27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2BAB78F96DAADF6C223E602C290569A;
+			remoteInfo = SwrveSDK;
+		};
+		6B3458DCED525C1C1CC74195C7EFB932 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0582D2BA86FFFFE52337D3618A94378;
+			remoteInfo = "AbTrackingLib-AbTrackingLib";
+		};
+		6D78227BC396C0F272C5E9C32BD2FB79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 940007555684AE53CDE4C28B3C05C680;
+			remoteInfo = AbTrackingLib;
+		};
+		836CF3D1E1939EEAD79D022F89339915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDA22FA12F4620528DCCFB018F338009;
+			remoteInfo = SwrveSDKCommon;
+		};
+		95FA10D499D0F52E5DA887B3EE53CD48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0E4F3A8ACFB6E9404B71377DF2BB14D;
 			remoteInfo = AdvertileSDK;
+		};
+		DF71932BAC8F8425E827D068D4DCD949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDA22FA12F4620528DCCFB018F338009;
+			remoteInfo = SwrveSDKCommon;
+		};
+		E3D569896358CF015548AAE394825C1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF5D8AFD2235153534269228172482D;
+			remoteInfo = SwrveConversationSDK;
+		};
+		F64CBB7F90B4B51675202C23F281D4D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2BAB78F96DAADF6C223E602C290569A;
+			remoteInfo = SwrveSDK;
+		};
+		FC01D73ADAA4EA8D30A3A88BFF9AA9CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDA22FA12F4620528DCCFB018F338009;
+			remoteInfo = SwrveSDKCommon;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03A92AAF9292B7630A7F3BA18F1CDD0D /* AdvertileSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdvertileSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0602B1A43F7A65841AFBBAD78EECDCF4 /* AdvertileSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AdvertileSDK-prefix.pch"; sourceTree = "<group>"; };
-		06E0ED3CAD667D26D5638C9D0CB6D6A1 /* AdvertileSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AdvertileSDK.modulemap; sourceTree = "<group>"; };
-		0C6A319502EDEEED7690741AB788C59D /* AdvertileSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AdvertileSDK.xcconfig; sourceTree = "<group>"; };
+		0071E5E9C8701AF4FA8075CF12137DE7 /* SwrveInputItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveInputItem.m; path = SwrveConversationSDK/Conversation/SwrveInputItem.m; sourceTree = "<group>"; };
+		00A68B567C371297046CD431FF4E2875 /* SwrveBaseConversation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveBaseConversation.m; path = SwrveConversationSDK/Conversation/SwrveBaseConversation.m; sourceTree = "<group>"; };
+		0213887DC60C645781A7ABC4AA87144D /* SwrveConversationAtom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveConversationAtom.h; path = SwrveConversationSDK/Conversation/SwrveConversationAtom.h; sourceTree = "<group>"; };
+		03FB19ED2526004F2CE0DDD10883CF2B /* SwrveCampaign.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveCampaign.h; path = SwrveSDK/SDK/Talk/SwrveCampaign.h; sourceTree = "<group>"; };
+		05BD7F422F302C7777B2EFB5A6568BC3 /* SwrveSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwrveSDK-prefix.pch"; sourceTree = "<group>"; };
+		060C547F50409CB808DBA6B532A6E943 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0630A72CEF8381029EEF3BA63DE8760A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		0935751D342586B16BCD3DA71274C2AC /* AdvertileSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AdvertileSDK.modulemap; sourceTree = "<group>"; };
+		0A08C1222A77E97FB9F720A73D5DC9EC /* AbTrackingLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AbTrackingLib-dummy.m"; sourceTree = "<group>"; };
+		0C277CB8CC3BC5F6A1E56961A1D2D55C /* cvsr_grouped_cell_single_ios7.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = cvsr_grouped_cell_single_ios7.png; path = SwrveConversationSDK/Resources/cvsr_grouped_cell_single_ios7.png; sourceTree = "<group>"; };
+		0C3A551DB7C380CD718DF5F18DB3A65D /* ISHPermissionRequestLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISHPermissionRequestLocation.m; path = SwrveSDK/SDK/Permissions/ISHPermissionRequestLocation.m; sourceTree = "<group>"; };
+		0C791E70176EAAEF14864269F74B1C49 /* SwrveMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveMessage.h; path = SwrveSDK/SDK/Talk/SwrveMessage.h; sourceTree = "<group>"; };
+		0DDDB05CCB6724F1615B0FBC44499F79 /* SwrveContentStarRatingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveContentStarRatingView.m; path = SwrveConversationSDK/Conversation/SwrveContentStarRatingView.m; sourceTree = "<group>"; };
+		0E1FA64FC90D890D924F0A10D3E331FB /* cvsr_grouped_cell_bottom@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvsr_grouped_cell_bottom@2x.png"; path = "SwrveConversationSDK/Resources/cvsr_grouped_cell_bottom@2x.png"; sourceTree = "<group>"; };
+		10508E425C4D3EF3A4AFF3CC077A54CB /* ISHPermissionRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISHPermissionRequest.h; path = SwrveSDK/SDK/Permissions/ISHPermissionRequest.h; sourceTree = "<group>"; };
+		10A8296FF5DFEBDFCEA03EFD964246A3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BF424501F57C7C5BE093559FF518FF /* SwrveSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwrveSDK.modulemap; sourceTree = "<group>"; };
+		12CE700FF2FDB19FCA04161F5DE9BB9E /* cvsr_grouped_cell_single_tapped.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = cvsr_grouped_cell_single_tapped.png; path = SwrveConversationSDK/Resources/cvsr_grouped_cell_single_tapped.png; sourceTree = "<group>"; };
+		132E284CCDD5A883EE84809CF709F575 /* AdvertileSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdvertileSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B979F2C61C73E1F9CB6B916F52706D /* VGConversationKitResources-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "VGConversationKitResources-Info.plist"; path = "SwrveConversationSDK/Resources/VGConversationKitResources-Info.plist"; sourceTree = "<group>"; };
+		15FF06E51FB112A32FD72492D6B175A1 /* SwrvePrivateBaseCampaign.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrvePrivateBaseCampaign.h; path = SwrveSDK/SDK/Talk/SwrvePrivateBaseCampaign.h; sourceTree = "<group>"; };
+		19029185C06E35422F8EDD69A0353941 /* cvsr_keyboardBackground@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvsr_keyboardBackground@2x.png"; path = "SwrveConversationSDK/Resources/cvsr_keyboardBackground@2x.png"; sourceTree = "<group>"; };
+		19D00BD0D9B99DE5012EFFEFA1929BBE /* SwrveContentItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveContentItem.h; path = SwrveConversationSDK/Conversation/SwrveContentItem.h; sourceTree = "<group>"; };
+		1BCFB85EEAE6228D312637C4CE98FA11 /* SwrveMessageViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveMessageViewController.m; path = SwrveSDK/SDK/Talk/SwrveMessageViewController.m; sourceTree = "<group>"; };
+		1D9C260A866CF36C77A21F816E923841 /* Swrve.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Swrve.m; path = SwrveSDK/SDK/Track/Swrve.m; sourceTree = "<group>"; };
+		1DC9003FA604F981FBC9855C41505FC2 /* ISHPermissionRequest+All.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ISHPermissionRequest+All.m"; path = "SwrveSDK/SDK/Permissions/ISHPermissionRequest+All.m"; sourceTree = "<group>"; };
 		1DEB10B5640C69FF03D55153CF85CF14 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34375826DDD42F7D496DFB099E19687B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E200E783FA086090D71DC0532A86770 /* ISHPermissionRequestNotificationsRemote.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISHPermissionRequestNotificationsRemote.h; path = SwrveSDK/SDK/Permissions/ISHPermissionRequestNotificationsRemote.h; sourceTree = "<group>"; };
+		21472AEE81480AA5882F730DA220E66C /* SwrveBaseCampaign.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveBaseCampaign.m; path = SwrveSDK/SDK/Talk/SwrveBaseCampaign.m; sourceTree = "<group>"; };
+		2175A912A5E79C4DF6ADE060FB5F35F6 /* SwrveContentImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveContentImage.m; path = SwrveConversationSDK/Conversation/SwrveContentImage.m; sourceTree = "<group>"; };
+		2181F390A227254E0C90FB7322ECA009 /* UINavigationController+KeyboardResponderFix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+KeyboardResponderFix.h"; path = "SwrveConversationSDK/Conversation/Categories/UINavigationController+KeyboardResponderFix.h"; sourceTree = "<group>"; };
+		221D86EBC44311E070A7C93DD32721C1 /* SwrveConversationSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwrveConversationSDK-prefix.pch"; sourceTree = "<group>"; };
+		23282DAC1E86768D7BBF32635C6167F8 /* SwrveConversationCampaign.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveConversationCampaign.h; path = SwrveSDK/SDK/Conversation/SwrveConversationCampaign.h; sourceTree = "<group>"; };
+		2510F26339CA6A09E013B196A933A315 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Contacts.framework; sourceTree = DEVELOPER_DIR; };
+		26568311741E6D1EAAF3FF3CB56666F6 /* cvsr_grouped_cell_bottom_ios7@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvsr_grouped_cell_bottom_ios7@2x.png"; path = "SwrveConversationSDK/Resources/cvsr_grouped_cell_bottom_ios7@2x.png"; sourceTree = "<group>"; };
+		28153A474946CC89AC09ADF5DCB0C43B /* SwrveInterfaceOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveInterfaceOrientation.h; path = SwrveSDK/SDK/Talk/SwrveInterfaceOrientation.h; sourceTree = "<group>"; };
+		283672C547CAD39AC11A1C2831F62101 /* SwrveConversationEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveConversationEvents.h; path = SwrveConversationSDK/Conversation/SwrveConversationEvents.h; sourceTree = "<group>"; };
+		2874863A2D4C93679B742F7DC8659011 /* cvsr_grouped_cell_mid_ios7@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvsr_grouped_cell_mid_ios7@2x.png"; path = "SwrveConversationSDK/Resources/cvsr_grouped_cell_mid_ios7@2x.png"; sourceTree = "<group>"; };
+		28D98755D78ED8892CB92F04F773D180 /* SwrveSwizzleHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveSwizzleHelper.m; path = SwrveSDK/SDK/Track/SwrveSwizzleHelper.m; sourceTree = "<group>"; };
+		2CF031CEE80AADA1E44E34A0CA0A9C5B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		2E60F5E404EA4F26458E8F4F824633CF /* cvsr_grouped_cell_single_tapped@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvsr_grouped_cell_single_tapped@2x.png"; path = "SwrveConversationSDK/Resources/cvsr_grouped_cell_single_tapped@2x.png"; sourceTree = "<group>"; };
+		30071147ED49FEEC80953469EB22ED77 /* SwrveSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwrveSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		306A3F7BB95DC39CE184BA62CDBCBF61 /* SwrveCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveCommon.h; path = SwrveSDKCommon/Common/SwrveCommon.h; sourceTree = "<group>"; };
+		30E9A38215E26AC5F53C07BAD5ADDE9E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		33FE56A56A0FEC66E415835EDA5461C3 /* SwrveSDKCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwrveSDKCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35F9C9647BA2BCCA68CB108C93C6E081 /* SwrveContentHTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveContentHTML.h; path = SwrveConversationSDK/Conversation/SwrveContentHTML.h; sourceTree = "<group>"; };
+		36B48F44EA5D18859B21416611E09B85 /* star-full@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "star-full@2x.png"; path = "SwrveConversationSDK/Resources/star-full@2x.png"; sourceTree = "<group>"; };
+		36BEAB317469EA5D44C4F642A196DFCC /* cvsr_grouped_cell_top_ios7.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = cvsr_grouped_cell_top_ios7.png; path = SwrveConversationSDK/Resources/cvsr_grouped_cell_top_ios7.png; sourceTree = "<group>"; };
+		37DAAD5B0BA40F95AAF87854ACC42A32 /* SwrveMessageController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveMessageController.m; path = SwrveSDK/SDK/Talk/SwrveMessageController.m; sourceTree = "<group>"; };
+		38F774EFE97E6E4DBE0E8E0FB832E3F4 /* SwrveResourceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveResourceManager.m; path = SwrveSDK/SDK/Track/SwrveResourceManager.m; sourceTree = "<group>"; };
 		3918EA78D8113322489DDA84B1853886 /* Pods-AdvertileSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AdvertileSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		39B240BF5C26163D3DE11C7906B6DB0E /* AbTrackingLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AbTrackingLib.xcconfig; sourceTree = "<group>"; };
+		3B7371E5009D0390BF236E1F2AD9425D /* SwrveConversationResource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveConversationResource.h; path = SwrveConversationSDK/Conversation/SwrveConversationResource.h; sourceTree = "<group>"; };
+		3FB2BCD237D5FD934768230FBE7C226E /* SwrveContentItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveContentItem.m; path = SwrveConversationSDK/Conversation/SwrveContentItem.m; sourceTree = "<group>"; };
+		3FCA7978CC855D0F9844B98EEDEA8744 /* ABTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ABTracker.h; path = Pod/Classes/ABTracker.h; sourceTree = "<group>"; };
+		41AC8148B52A973A3678130DFAEC3B31 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
 		41C445DF903C077D21FBB6AA6E739FCA /* Pods-AdvertileSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdvertileSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		46332524D1B4CDB6AEFFE880421B59BC /* AdvertileSDK.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AdvertileSDK.m; path = AdvertileSDK/Classes/AdvertileSDK.m; sourceTree = "<group>"; };
+		41C88045383ED27CF9BD53D0393AC4FA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		4328BE1D742487D928A61D22A6F47DF0 /* SwrveSDKCommon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwrveSDKCommon-dummy.m"; sourceTree = "<group>"; };
+		439ACF8DB4E5F9C557D044B1AD0C645F /* close_button.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = close_button.png; path = SwrveConversationSDK/Resources/close_button.png; sourceTree = "<group>"; };
 		48DC60C1BDD71ECC1E66DBA2B49413D3 /* Pods-AdvertileSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdvertileSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4946A6E0784A5A2FDB4D50CB7C4F6F70 /* Pods-AdvertileSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdvertileSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		494D7E361D749264000332FD /* AdvertileSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertileSDK.h; sourceTree = "<group>"; };
+		494D7E371D749264000332FD /* AdvertileSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertileSDK.m; sourceTree = "<group>"; };
 		4B6E44DB4C8DF0F7D3684EBFAE7139DD /* Pods-AdvertileSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdvertileSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4EBB553C5323BE553FA9EF44A90024FA /* Pods_AdvertileSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvertileSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CF9A4E199DAF355093CE16A96BC5CC9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F7BFECEE52A3D29D8A94E222ADBB849 /* SwrveConversationSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwrveConversationSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FDC88F0473C675EC97D4AB79006995E /* NSURLConnection+Blocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLConnection+Blocks.m"; path = "Pod/Classes/helper/NSURLConnection+Blocks.m"; sourceTree = "<group>"; };
+		5004449997A205CDFDCFA16DA32A926D /* star-empty@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "star-empty@2x.png"; path = "SwrveConversationSDK/Resources/star-empty@2x.png"; sourceTree = "<group>"; };
+		514A024433D3D71F4685B56AE6619691 /* SwrveMessageFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveMessageFormat.h; path = SwrveSDK/SDK/Talk/SwrveMessageFormat.h; sourceTree = "<group>"; };
+		516876F86FDFFF4D5E35C3C58F7E0569 /* cvsr_grouped_cell_bottom_tapped.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = cvsr_grouped_cell_bottom_tapped.png; path = SwrveConversationSDK/Resources/cvsr_grouped_cell_bottom_tapped.png; sourceTree = "<group>"; };
+		569112CB9ABFD40697E8E6B82B1EA940 /* cvsr_grouped_cell_top_tapped.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = cvsr_grouped_cell_top_tapped.png; path = SwrveConversationSDK/Resources/cvsr_grouped_cell_top_tapped.png; sourceTree = "<group>"; };
 		56EA969441646AC2F87BCF836B8D025A /* Pods-AdvertileSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdvertileSDK_Example-dummy.m"; sourceTree = "<group>"; };
-		5EF642030C91A26CD040815FC6188A6A /* AdvertileSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AdvertileSDK.h; path = AdvertileSDK/Classes/AdvertileSDK.h; sourceTree = "<group>"; };
-		6E7BE6DCD0602B0372ACDE214FE48D4B /* AdvertileSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AdvertileSDK-umbrella.h"; sourceTree = "<group>"; };
+		58BF5F1ECEAD5AD9C6CF1CB818D8E9E4 /* AdvertileSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AdvertileSDK-prefix.pch"; sourceTree = "<group>"; };
+		5B9D91B5A59A07C759135EEE64526FFD /* cvsr_grouped_cell_mid.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = cvsr_grouped_cell_mid.png; path = SwrveConversationSDK/Resources/cvsr_grouped_cell_mid.png; sourceTree = "<group>"; };
+		5C0C74A82453867A73F061623D0C6DC5 /* cvsr_grouped_cell_mid_ios7.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = cvsr_grouped_cell_mid_ios7.png; path = SwrveConversationSDK/Resources/cvsr_grouped_cell_mid_ios7.png; sourceTree = "<group>"; };
+		5CA456FCB04C67D6D3D6644171FCE5D1 /* SwrveBaseConversation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveBaseConversation.h; path = SwrveConversationSDK/Conversation/SwrveBaseConversation.h; sourceTree = "<group>"; };
+		5DF60C86FA4646B9046EA3B4695B2B95 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		5E00E3F8B63D19FEDA15DB74EF52BD99 /* cvsr_grouped_cell_top.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = cvsr_grouped_cell_top.png; path = SwrveConversationSDK/Resources/cvsr_grouped_cell_top.png; sourceTree = "<group>"; };
+		6136731837AB655279CA11F3337B7B8A /* SwrveContentStarRatingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveContentStarRatingView.h; path = SwrveConversationSDK/Conversation/SwrveContentStarRatingView.h; sourceTree = "<group>"; };
+		62DEEBAD2D90DB3180A195D312A3BFF8 /* SwrveCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveCommon.m; path = SwrveSDKCommon/Common/SwrveCommon.m; sourceTree = "<group>"; };
+		62ECC7E1505248CB3EF7D17E600D2E0E /* AdvertileSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AdvertileSDK-dummy.m"; sourceTree = "<group>"; };
+		643259FD21DA8366B4BFE96EF97EF82A /* SwrveSetup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveSetup.h; path = SwrveConversationSDK/Conversation/SwrveSetup.h; sourceTree = "<group>"; };
+		65C3F09BE1E031012C162B6E8799945D /* SwrveConversationButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveConversationButton.h; path = SwrveConversationSDK/Conversation/SwrveConversationButton.h; sourceTree = "<group>"; };
+		674FA1DF835C637576F899C85F1C1B38 /* SwrveConversationSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwrveConversationSDK.modulemap; sourceTree = "<group>"; };
+		6881BEB7CB5BAF6853A61E66BBD621AC /* Pods_AdvertileSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvertileSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68EA3E0850DDC1383E9B35A087D75F12 /* SwrveSDKCommon.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwrveSDKCommon.xcconfig; sourceTree = "<group>"; };
+		69E223EA4BDD35F3A1217F3F8BA0F444 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		6A24EB4B0CFDFDC1947B486042410194 /* SwrveTalkQA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveTalkQA.m; path = SwrveSDK/SDK/Talk/SwrveTalkQA.m; sourceTree = "<group>"; };
+		6AFCAF986D997B6B58D02927B070FFB1 /* SwrveBaseCampaign.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveBaseCampaign.h; path = SwrveSDK/SDK/Talk/SwrveBaseCampaign.h; sourceTree = "<group>"; };
+		6E364B59E22AB3E60C0014142FE263E0 /* AbTrackingLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbTrackingLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6FCFB52EAE7DADEF8A271A5D65C944 /* SwrveMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveMessage.m; path = SwrveSDK/SDK/Talk/SwrveMessage.m; sourceTree = "<group>"; };
+		702926581EEB6FDEFD4C8AC8DD18F864 /* NSURLConnection+Blocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLConnection+Blocks.h"; path = "Pod/Classes/helper/NSURLConnection+Blocks.h"; sourceTree = "<group>"; };
 		70A4137ECFE1DA1B6FB3C852ECBD253E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71C67CC822A5F70849C77C7A0DEB6BB0 /* ABTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ABTracker.m; path = Pod/Classes/ABTracker.m; sourceTree = "<group>"; };
+		73890E71A4A1DCE65A7917BA27C334BB /* close_button@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "close_button@2x.png"; path = "SwrveConversationSDK/Resources/close_button@2x.png"; sourceTree = "<group>"; };
+		758881DEE37699FB4E67D726E0587E5B /* SwrveSignatureProtectedFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveSignatureProtectedFile.h; path = SwrveSDKCommon/Common/SwrveSignatureProtectedFile.h; sourceTree = "<group>"; };
+		767B70EA9A26BBE52AEE0AB29D7D4660 /* Pods_AdvertileSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvertileSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7701B441CF865943257AAEA39226AC90 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
+		77B4D2BB0C53253A0D2903345C0EFC84 /* SwrveMessageEventHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveMessageEventHandler.h; path = SwrveConversationSDK/Conversation/SwrveMessageEventHandler.h; sourceTree = "<group>"; };
+		78F05CB7E390542F5AD441558E34DC31 /* SwrveSDKCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwrveSDKCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		790CA40C7CF4C13558741D10E38BE049 /* AdvertileSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AdvertileSDK.xcconfig; sourceTree = "<group>"; };
+		7BCABC1D6BB4E432009AF2632702DA62 /* cvsr_grouped_cell_bottom_ios7.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = cvsr_grouped_cell_bottom_ios7.png; path = SwrveConversationSDK/Resources/cvsr_grouped_cell_bottom_ios7.png; sourceTree = "<group>"; };
+		7CDFC0443688ED4D0F0E19C4EFA3086C /* SwrveSDKCommon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwrveSDKCommon-umbrella.h"; sourceTree = "<group>"; };
 		7CE8FE2E386AD3485CA17B9B57B3C50E /* Pods-AdvertileSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdvertileSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7D5DA43910D2C297F806B23C066F4777 /* SwrveMessageViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveMessageViewController.h; path = SwrveSDK/SDK/Talk/SwrveMessageViewController.h; sourceTree = "<group>"; };
+		7D6159F84977537374A49CED647E24FD /* SwrveMessageController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveMessageController.h; path = SwrveSDK/SDK/Talk/SwrveMessageController.h; sourceTree = "<group>"; };
+		7EF8D3412AC5D2C3C280D743F806D551 /* SwrveInputItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveInputItem.h; path = SwrveConversationSDK/Conversation/SwrveInputItem.h; sourceTree = "<group>"; };
+		7F10ABF243339D29A359B7E45C9DDBF6 /* SwrveContentStarRating.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveContentStarRating.h; path = SwrveConversationSDK/Conversation/SwrveContentStarRating.h; sourceTree = "<group>"; };
+		7F1EAD8CC49C8BE06AF01AF9DC9AEC32 /* SwrveSignatureProtectedFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveSignatureProtectedFile.m; path = SwrveSDKCommon/Common/SwrveSignatureProtectedFile.m; sourceTree = "<group>"; };
+		7F1EE4FF86195E6625D14B3E23654A7E /* SwrveCampaignStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveCampaignStatus.h; path = SwrveSDK/SDK/Talk/SwrveCampaignStatus.h; sourceTree = "<group>"; };
+		7F4C5EFEB9C6C35358C5C9AFFBA5957A /* SwrveReceiptProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveReceiptProvider.m; path = SwrveSDK/SDK/Track/SwrveReceiptProvider.m; sourceTree = "<group>"; };
+		810AD898F128958142207E4FF47B2F33 /* SwrveConversationAtomFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveConversationAtomFactory.m; path = SwrveConversationSDK/Conversation/SwrveConversationAtomFactory.m; sourceTree = "<group>"; };
+		8182BE4C15E949F6DB317650CE0FE70D /* SwrveConversationAtom.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveConversationAtom.m; path = SwrveConversationSDK/Conversation/SwrveConversationAtom.m; sourceTree = "<group>"; };
+		841155CC960088283E0E588ED585B2A2 /* SwrveContentSpacer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveContentSpacer.m; path = SwrveConversationSDK/Conversation/SwrveContentSpacer.m; sourceTree = "<group>"; };
+		842A7D075BC7BABDF9D0B935A04CA70D /* SwrveConversationItemViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveConversationItemViewController.h; path = SwrveConversationSDK/Conversation/SwrveConversationItemViewController.h; sourceTree = "<group>"; };
+		84CF0AA2C131D87CABDAD2FF87CBCAD1 /* SwrveTalkQA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveTalkQA.h; path = SwrveSDK/SDK/Talk/SwrveTalkQA.h; sourceTree = "<group>"; };
+		89563F8B9BFA77819CD3FE0EA50DF47C /* AbTrackingLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AbTrackingLib.modulemap; sourceTree = "<group>"; };
+		8B85BDBB778EA045E1EC629682FA8B30 /* ISHPermissionRequestPhotoCamera.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISHPermissionRequestPhotoCamera.m; path = SwrveSDK/SDK/Permissions/ISHPermissionRequestPhotoCamera.m; sourceTree = "<group>"; };
+		8E8272567A51C84C5506C6E98CE2D2D8 /* SwrveSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwrveSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EDC4E32166CDF8A596DABE3D22A06CE /* SwrveResourceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveResourceManager.h; path = SwrveSDK/SDK/Track/SwrveResourceManager.h; sourceTree = "<group>"; };
+		8F92E46717FC0F247B6FC2ADF921A2CC /* SwrveContentSpacer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveContentSpacer.h; path = SwrveConversationSDK/Conversation/SwrveContentSpacer.h; sourceTree = "<group>"; };
 		8FAD3BECB12AF93C65D287E8D4075966 /* Pods-AdvertileSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdvertileSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8FB68FF87B112E1286D6D5DE55312EFE /* SwrveSDKCommon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwrveSDKCommon.modulemap; sourceTree = "<group>"; };
 		90696F5A817C508A123ABDECFC136EFA /* Pods-AdvertileSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AdvertileSDK_Example.modulemap"; sourceTree = "<group>"; };
+		907E10A239C674FB3CFCB15BDC028B8F /* SwrveImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveImage.m; path = SwrveSDK/SDK/Talk/SwrveImage.m; sourceTree = "<group>"; };
+		907F93CC453EE1E07D1C5DDA1775FAE7 /* cvsr_grouped_cell_mid_tapped@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvsr_grouped_cell_mid_tapped@2x.png"; path = "SwrveConversationSDK/Resources/cvsr_grouped_cell_mid_tapped@2x.png"; sourceTree = "<group>"; };
+		9361A44789B6CEACD025421E81D18856 /* SwrveCampaign.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveCampaign.m; path = SwrveSDK/SDK/Talk/SwrveCampaign.m; sourceTree = "<group>"; };
+		93821BADEC5E838F3204F5F4712A6027 /* SwrveSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwrveSDK-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		942A7AFE6DE469863026CEF29DF049EE /* UIWebView+YouTubeVimeo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+YouTubeVimeo.m"; path = "SwrveConversationSDK/Conversation/Categories/UIWebView+YouTubeVimeo.m"; sourceTree = "<group>"; };
+		95620427FF3E2C4ED98ED5FB20B9E1FC /* SwrveInputMultiValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveInputMultiValue.m; path = SwrveConversationSDK/Conversation/SwrveInputMultiValue.m; sourceTree = "<group>"; };
+		9637499C7F76C34E12B9DD9E9AEDC06E /* ISHPermissionRequest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ISHPermissionRequest+Private.h"; path = "SwrveSDK/SDK/Permissions/ISHPermissionRequest+Private.h"; sourceTree = "<group>"; };
 		974F4A59EE9C83E48AE1B5A9191C05E4 /* Pods-AdvertileSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdvertileSDK_Example-resources.sh"; sourceTree = "<group>"; };
+		98B4E65B83C8892F798FC2FB57146E38 /* Swrve.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Swrve.h; path = SwrveSDK/SDK/Track/Swrve.h; sourceTree = "<group>"; };
+		99E6A59DADFFD60E57B039F7B8C1CE64 /* SwrveConversationSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwrveConversationSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A31C215D07809EE9AC165EDFBEEBB0E /* cvsr_grouped_cell_bottom.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = cvsr_grouped_cell_bottom.png; path = SwrveConversationSDK/Resources/cvsr_grouped_cell_bottom.png; sourceTree = "<group>"; };
+		9AF7E61FBF41BD61125AD0B22A0C177D /* ISHPermissionRequestAddressBook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISHPermissionRequestAddressBook.h; path = SwrveSDK/SDK/Permissions/ISHPermissionRequestAddressBook.h; sourceTree = "<group>"; };
+		9CACC6E2DAAD167B5BCFED8B4132F6C5 /* SwrveCommonConnectionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveCommonConnectionDelegate.h; path = SwrveSDKCommon/Common/SwrveCommonConnectionDelegate.h; sourceTree = "<group>"; };
+		9CB73BA2AB2C014CD819D3782F61CD04 /* SwrveConversationCampaign.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveConversationCampaign.m; path = SwrveSDK/SDK/Conversation/SwrveConversationCampaign.m; sourceTree = "<group>"; };
+		9DD267B135CF6020C56F37111EB38157 /* SwrveButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveButton.m; path = SwrveSDK/SDK/Talk/SwrveButton.m; sourceTree = "<group>"; };
+		9EDA9C6C92E27CD08F62533E9DB16269 /* ISHPermissionCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISHPermissionCategory.h; path = SwrveSDK/SDK/Permissions/ISHPermissionCategory.h; sourceTree = "<group>"; };
+		A19E7245DB61463083C42087C7A14144 /* SwrveImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveImage.h; path = SwrveSDK/SDK/Talk/SwrveImage.h; sourceTree = "<group>"; };
+		A1C482B8C45632A26DFEF6AFB00A53CE /* SwrvePermissions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrvePermissions.h; path = SwrveSDK/SDK/Talk/SwrvePermissions.h; sourceTree = "<group>"; };
+		A435B7DFF87896C26D776B2BC3176D0B /* SwrveButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveButton.h; path = SwrveSDK/SDK/Talk/SwrveButton.h; sourceTree = "<group>"; };
+		A458421E8876AB6DAEC56171143F0C18 /* SwrveSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwrveSDK.xcconfig; sourceTree = "<group>"; };
+		A46D70457A94F26BA05247A1CDF4D6A0 /* cvsr_grouped_cell_top_ios7@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvsr_grouped_cell_top_ios7@2x.png"; path = "SwrveConversationSDK/Resources/cvsr_grouped_cell_top_ios7@2x.png"; sourceTree = "<group>"; };
+		A51997B272663A9D359E88722C55BC1E /* SwrveConversationButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveConversationButton.m; path = SwrveConversationSDK/Conversation/SwrveConversationButton.m; sourceTree = "<group>"; };
+		A6788717BA24653CBEED75A3E93BECB2 /* SwrveConversationUIButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveConversationUIButton.h; path = SwrveConversationSDK/Conversation/SwrveConversationUIButton.h; sourceTree = "<group>"; };
+		A6CB5B7D5490654F6A67A0196B325E08 /* cvsr_grouped_cell_single.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = cvsr_grouped_cell_single.png; path = SwrveConversationSDK/Resources/cvsr_grouped_cell_single.png; sourceTree = "<group>"; };
+		A701445E7B3F4D9AE362377995D26418 /* ISHPermissionRequest+All.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ISHPermissionRequest+All.h"; path = "SwrveSDK/SDK/Permissions/ISHPermissionRequest+All.h"; sourceTree = "<group>"; };
 		A7A912985F06AB38278CB64545A2B6E5 /* Pods-AdvertileSDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdvertileSDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		A8671FB8D448394D6DDB528B6E6EE8EB /* SwrveContentStarRating.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveContentStarRating.m; path = SwrveConversationSDK/Conversation/SwrveContentStarRating.m; sourceTree = "<group>"; };
+		AAF6B2D496C868F53675E152DC5DC0DE /* SwrveConversationPane.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveConversationPane.m; path = SwrveConversationSDK/Conversation/SwrveConversationPane.m; sourceTree = "<group>"; };
+		AB85B46E5E8E5FA7AC5DBA4D75526B40 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		AE4BA6F3E540BF51060FD8D46D9525E5 /* SwrveConversationContainerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveConversationContainerViewController.m; path = SwrveConversationSDK/Conversation/SwrveConversationContainerViewController.m; sourceTree = "<group>"; };
+		B3F3BD55DA765BF81810AA3BF8E76262 /* cvsr_grouped_cell_top_tapped@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvsr_grouped_cell_top_tapped@2x.png"; path = "SwrveConversationSDK/Resources/cvsr_grouped_cell_top_tapped@2x.png"; sourceTree = "<group>"; };
+		B5D362AA7CF1C93769832E40488C2B84 /* SwrveConversationStyler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveConversationStyler.h; path = SwrveConversationSDK/Conversation/SwrveConversationStyler.h; sourceTree = "<group>"; };
+		B8C015A0F6834F8D8810E981E59CF43F /* SwrveInputMultiValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveInputMultiValue.h; path = SwrveConversationSDK/Conversation/SwrveInputMultiValue.h; sourceTree = "<group>"; };
 		B8C8C1F7A246E637536F808F8BF505D3 /* Pods-AdvertileSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdvertileSDK_Tests-dummy.m"; sourceTree = "<group>"; };
-		BB10A136D0C90F347E73D1FE23492C58 /* Pods_AdvertileSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdvertileSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B8FC10C64C37F461673D35F16A665DB0 /* SwrveCommonConnectionDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveCommonConnectionDelegate.m; path = SwrveSDKCommon/Common/SwrveCommonConnectionDelegate.m; sourceTree = "<group>"; };
+		B936A255616E2E07B507628799C3735A /* ISHPermissionRequestPhotoLibrary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISHPermissionRequestPhotoLibrary.m; path = SwrveSDK/SDK/Permissions/ISHPermissionRequestPhotoLibrary.m; sourceTree = "<group>"; };
+		BD1703D259C40C359DE8F2F96B683BBB /* SwrveConversation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveConversation.m; path = SwrveSDK/SDK/Conversation/SwrveConversation.m; sourceTree = "<group>"; };
+		BDD822F22E73967F725F17A80398C0C7 /* ISHPermissionRequestPhotoLibrary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISHPermissionRequestPhotoLibrary.h; path = SwrveSDK/SDK/Permissions/ISHPermissionRequestPhotoLibrary.h; sourceTree = "<group>"; };
+		BE30E6F4EAA56B9E7626C09C3BDFE907 /* SwrveConversationEvents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveConversationEvents.m; path = SwrveConversationSDK/Conversation/SwrveConversationEvents.m; sourceTree = "<group>"; };
+		BE8802DBBA8D682F715A566E2A98FBC2 /* SwrveContentVideo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveContentVideo.h; path = SwrveConversationSDK/Conversation/SwrveContentVideo.h; sourceTree = "<group>"; };
+		C1EF733DBB3E856F95C10AFA48A019E9 /* ISHPermissionRequestPhotoCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISHPermissionRequestPhotoCamera.h; path = SwrveSDK/SDK/Permissions/ISHPermissionRequestPhotoCamera.h; sourceTree = "<group>"; };
+		C24C20FB8A9080F2A494F4C21E8BBEA1 /* AbTrackingLib.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbTrackingLib.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30FAE2AB61F40F7123E027ADB8AD78F /* cvsr_grouped_cell_single@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvsr_grouped_cell_single@2x.png"; path = "SwrveConversationSDK/Resources/cvsr_grouped_cell_single@2x.png"; sourceTree = "<group>"; };
+		C5BCC955489C25F9C991DAFBD2B296C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		C6CA4E65FF81B997D86782EE572B3E09 /* star-full.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "star-full.png"; path = "SwrveConversationSDK/Resources/star-full.png"; sourceTree = "<group>"; };
+		C7E37CC1C018DE14031D5099833E1140 /* SwrveInternalAccess.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveInternalAccess.h; path = SwrveSDK/SDK/Track/SwrveInternalAccess.h; sourceTree = "<group>"; };
+		C9524DD51231F3E589C69881A17FDE64 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C96C68CE443B28C9F95D1361F92C4509 /* ISHPermissionRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISHPermissionRequest.m; path = SwrveSDK/SDK/Permissions/ISHPermissionRequest.m; sourceTree = "<group>"; };
+		CC0C1C9893D30A9C099EB38B64D1F260 /* SwrveConversation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveConversation.h; path = SwrveSDK/SDK/Conversation/SwrveConversation.h; sourceTree = "<group>"; };
+		CC1222F8F55979ACF9693F911222EE3D /* AbTrackingLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AbTrackingLib-umbrella.h"; sourceTree = "<group>"; };
+		CD169AD926613FA8BB174947FF6CF14F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CD5E2001ECF179A061EE6F4929699882 /* SwrveSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwrveSDK-dummy.m"; sourceTree = "<group>"; };
+		CD685A7C41C06C767668D50861BA6022 /* SwrveReceiptProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveReceiptProvider.h; path = SwrveSDK/SDK/Track/SwrveReceiptProvider.h; sourceTree = "<group>"; };
+		CEDEF403C01DC1EC0352498762CA3C54 /* cvsr_grouped_cell_single_ios7@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvsr_grouped_cell_single_ios7@2x.png"; path = "SwrveConversationSDK/Resources/cvsr_grouped_cell_single_ios7@2x.png"; sourceTree = "<group>"; };
+		CF241A29739C6707FDC463EBE05C73F4 /* SwrveSwizzleHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveSwizzleHelper.h; path = SwrveSDK/SDK/Track/SwrveSwizzleHelper.h; sourceTree = "<group>"; };
+		D02AEA42EC37112D2D8616256D766437 /* cvsr_grouped_cell_top@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvsr_grouped_cell_top@2x.png"; path = "SwrveConversationSDK/Resources/cvsr_grouped_cell_top@2x.png"; sourceTree = "<group>"; };
+		D04738081C7CD38656D38AB0F93E1221 /* cvsr_grouped_cell_bottom_tapped@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvsr_grouped_cell_bottom_tapped@2x.png"; path = "SwrveConversationSDK/Resources/cvsr_grouped_cell_bottom_tapped@2x.png"; sourceTree = "<group>"; };
+		D0E0240136F3718C99E8DEF1EA52520A /* SwrveConversationSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwrveConversationSDK.xcconfig; sourceTree = "<group>"; };
+		D243EE8A440BA09048F3C44FBFCA5136 /* SwrveConversationsNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveConversationsNavigationController.m; path = SwrveConversationSDK/Conversation/SwrveConversationsNavigationController.m; sourceTree = "<group>"; };
 		D291697DDF45D0DB0B65D4976B627B9F /* Pods-AdvertileSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdvertileSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D30BC9B27A20D8706EDD0649A4C85439 /* Pods-AdvertileSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdvertileSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D9B4B05C0045EFC4FC2F4795A4AE67CC /* AdvertileSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AdvertileSDK-dummy.m"; sourceTree = "<group>"; };
+		D51499F4CD19FDFB98C8BF90F3FC3803 /* SwrveConversationResource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveConversationResource.m; path = SwrveConversationSDK/Conversation/SwrveConversationResource.m; sourceTree = "<group>"; };
+		D5B54C84B83359A36E702F695166F154 /* SwrveConversationItemViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveConversationItemViewController.m; path = SwrveConversationSDK/Conversation/SwrveConversationItemViewController.m; sourceTree = "<group>"; };
+		D89735400F7A9329AEE494DB36ECE62E /* SwrveContentImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveContentImage.h; path = SwrveConversationSDK/Conversation/SwrveContentImage.h; sourceTree = "<group>"; };
+		DA9C5CE926480DBEA5DE11718B47E21F /* AbTrackingLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AbTrackingLib-prefix.pch"; sourceTree = "<group>"; };
+		DCA97F82CC8F00A3ADF033FFF2ED0FB7 /* SwrveConversationStyler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveConversationStyler.m; path = SwrveConversationSDK/Conversation/SwrveConversationStyler.m; sourceTree = "<group>"; };
+		DCD948309BF94225800FCA00245D84E4 /* SwrveContentVideo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveContentVideo.m; path = SwrveConversationSDK/Conversation/SwrveContentVideo.m; sourceTree = "<group>"; };
+		DFC1AA4F7B280F1B3B4764D3E4428893 /* AdvertileSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AdvertileSDK-umbrella.h"; sourceTree = "<group>"; };
 		E0F54C8CB72F326D172652E22A7C2996 /* Pods-AdvertileSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdvertileSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E17127A792D5076401DB0458D8DA6AB4 /* ISHPermissionRequestLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISHPermissionRequestLocation.h; path = SwrveSDK/SDK/Permissions/ISHPermissionRequestLocation.h; sourceTree = "<group>"; };
+		E3AE2DA61A03BC5D059D4490AEA695EE /* UIWebView+YouTubeVimeo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+YouTubeVimeo.h"; path = "SwrveConversationSDK/Conversation/Categories/UIWebView+YouTubeVimeo.h"; sourceTree = "<group>"; };
+		E44AB926AB57A9E3C76C113C30568077 /* SwrvePermissions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrvePermissions.m; path = SwrveSDK/SDK/Talk/SwrvePermissions.m; sourceTree = "<group>"; };
+		E53E96962AE908CCC5DD076CB49ED2E6 /* SwrveConversationUIButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveConversationUIButton.m; path = SwrveConversationSDK/Conversation/SwrveConversationUIButton.m; sourceTree = "<group>"; };
+		E648391CB1ED1134FE715F2B5BF826F9 /* ISHPermissionRequestNotificationsRemote.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISHPermissionRequestNotificationsRemote.m; path = SwrveSDK/SDK/Permissions/ISHPermissionRequestNotificationsRemote.m; sourceTree = "<group>"; };
+		E6C291B1906255C9878EDAFD8A031310 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A09CE7B902F25ADB373E1D97B67B12 /* SwrveContentHTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveContentHTML.m; path = SwrveConversationSDK/Conversation/SwrveContentHTML.m; sourceTree = "<group>"; };
+		EA0D4E4A3C41425427217071C36F486F /* cvsr_grouped_cell_mid_tapped.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = cvsr_grouped_cell_mid_tapped.png; path = SwrveConversationSDK/Resources/cvsr_grouped_cell_mid_tapped.png; sourceTree = "<group>"; };
+		EC27052494E31392F6E7A73923957FCD /* SwrveSDKCommon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwrveSDKCommon-prefix.pch"; sourceTree = "<group>"; };
+		EC76E2D3DCB2187AAE07382940998CBA /* SwrveConversation.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = SwrveConversation.storyboard; path = SwrveConversationSDK/Resources/SwrveConversation.storyboard; sourceTree = "<group>"; };
+		EC7F895AD6DA2C983D9F7DFBDEE3B75F /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Photos.framework; sourceTree = DEVELOPER_DIR; };
+		EC9DAEB59F84D8857732857DB62C7F8B /* AbTrackingLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbTrackingLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED34A08C76EA4CC5BC578AFA083858B2 /* SwrveConversationSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwrveConversationSDK-dummy.m"; sourceTree = "<group>"; };
+		F006F1B3D96151EC017F60ABB4598F68 /* SwrveMessageFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwrveMessageFormat.m; path = SwrveSDK/SDK/Talk/SwrveMessageFormat.m; sourceTree = "<group>"; };
+		F2D5EEA517DED139B8846C1D9ADE2C29 /* SwrveConversationsNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveConversationsNavigationController.h; path = SwrveConversationSDK/Conversation/SwrveConversationsNavigationController.h; sourceTree = "<group>"; };
+		F339CA190961A114F23250090CA326A9 /* SwrveConversationContainerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveConversationContainerViewController.h; path = SwrveConversationSDK/Conversation/SwrveConversationContainerViewController.h; sourceTree = "<group>"; };
+		F57927282EDC1C5B8EBB0651C8CDAE53 /* star-empty.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "star-empty.png"; path = "SwrveConversationSDK/Resources/star-empty.png"; sourceTree = "<group>"; };
+		F6A956D9FD95B522577F9F97A21279F7 /* UINavigationController+KeyboardResponderFix.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+KeyboardResponderFix.m"; path = "SwrveConversationSDK/Conversation/Categories/UINavigationController+KeyboardResponderFix.m"; sourceTree = "<group>"; };
+		F759FF820FF25D0B408795CBAC35DFCA /* ResourceBundle-AbTrackingLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AbTrackingLib-Info.plist"; sourceTree = "<group>"; };
 		F7AD07A9020E06D2C07EEE74347D27AA /* Pods-AdvertileSDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdvertileSDK_Tests-resources.sh"; sourceTree = "<group>"; };
+		F8A473D5757CB0A70417DA7B183C4853 /* cvsr_grouped_cell_mid@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "cvsr_grouped_cell_mid@2x.png"; path = "SwrveConversationSDK/Resources/cvsr_grouped_cell_mid@2x.png"; sourceTree = "<group>"; };
+		F9186C15631D8E30630BB1B270984BC0 /* ISHPermissionRequestAddressBook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISHPermissionRequestAddressBook.m; path = SwrveSDK/SDK/Permissions/ISHPermissionRequestAddressBook.m; sourceTree = "<group>"; };
+		F93EA0DE75B438383CA5881948F91EDC /* SwrveConversationAtomFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveConversationAtomFactory.h; path = SwrveConversationSDK/Conversation/SwrveConversationAtomFactory.h; sourceTree = "<group>"; };
+		F9764D4A7B747162F0618824D14B7403 /* SwrveConversationPane.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwrveConversationPane.h; path = SwrveConversationSDK/Conversation/SwrveConversationPane.h; sourceTree = "<group>"; };
+		FBB87243881B8FCD313F5C924F277366 /* cvsr_keyboardBackground.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = cvsr_keyboardBackground.png; path = SwrveConversationSDK/Resources/cvsr_keyboardBackground.png; sourceTree = "<group>"; };
+		FD932BD7167BF09432860FC07F533E14 /* SwrveConversationSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwrveConversationSDK-umbrella.h"; sourceTree = "<group>"; };
 		FDED8A54D5F4BB3E3AC56DFEA0E9B5F0 /* Pods-AdvertileSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdvertileSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FE53DCAF0BEB9C3445CD26AC7BEA9170 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEB5C2DE399816E2AB84162B5D679573 /* Pods-AdvertileSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdvertileSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1F36E3F06736F7110E35CD7997D46632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B85381AABE808E8F0BE7F258104C208 /* AbTrackingLib.framework in Frameworks */,
+				0029D8592C815E9AB50DEDC54D601C9C /* Foundation.framework in Frameworks */,
+				A484F515C4C50C13BF7C8E91C8C8D8C1 /* SwrveConversationSDK.framework in Frameworks */,
+				268BC8BC3EF3B5F89E1A853767EBE798 /* SwrveSDK.framework in Frameworks */,
+				8B9103D6B6D821FD29E15A1E7DE4499D /* SwrveSDKCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3F1339EB6F8F95B26FE878EAC83711 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A7DE9A3AB3BB5ABD3EF53352D660B8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,31 +547,89 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66207522E0DFFF8DE2AF41C7C84A008F /* Frameworks */ = {
+		83EEE1DA706B38441A1D333922A91089 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD05E747F424F68C5AEED710ED74D271 /* Foundation.framework in Frameworks */,
+				DE800AD21002564DDD5832BB942BB875 /* Foundation.framework in Frameworks */,
+				DFFD84D8FE55464216EC58B43163443C /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B75DB073D1073A42FF41ACC591C0437F /* Frameworks */ = {
+		8E215DA6DE8756BAB757436F7A7FAD8E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCE35C57C301566FB50931C6DAEC8D7B /* Foundation.framework in Frameworks */,
+				1F529EB1D43F7CFEC1766523F8FADC43 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961AC9EF233659020B8F821FFF9D51D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4236F6FF4A9EB37CF30386C7BA7B90 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4670943C76B5F0E17255FCFC3D72A59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				218A0A70E613B70E3866C59BD81BFDF6 /* Foundation.framework in Frameworks */,
+				4CADF060CD5CB49D269D76CC51D2E170 /* SwrveSDKCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC4441753B516DAB2C519580D85D3AE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A6BAD420EAB49F3CCE3ABFDE2C6FC41 /* AddressBook.framework in Frameworks */,
+				D96B68023617D6DC9E031E9701141C9D /* AssetsLibrary.framework in Frameworks */,
+				C21F4D8762902AF870DC3FC9FAC91DB7 /* AVFoundation.framework in Frameworks */,
+				F765BC6FA84FC6B34C581D64FA883051 /* CFNetwork.framework in Frameworks */,
+				67A0D78E3C1CE7F77B890326EF9D2656 /* Contacts.framework in Frameworks */,
+				F754BB46B8DB128E512A97D3E997FA3E /* CoreLocation.framework in Frameworks */,
+				C80446E7F56493F661F62B2F19B76A3D /* CoreTelephony.framework in Frameworks */,
+				F184B3FE56411437D718CDBDFF3CB3CB /* Foundation.framework in Frameworks */,
+				10AB51B43D405DDD89472A57D07E6347 /* MessageUI.framework in Frameworks */,
+				BC1AEE89C419AC1C9E5EF52B09A61C18 /* Photos.framework in Frameworks */,
+				25F267A008D12A5A25C18DBE099BDB7C /* QuartzCore.framework in Frameworks */,
+				4F69AF6CC6640A41119E40E950C6A6D4 /* Security.framework in Frameworks */,
+				B9A01BA85EC7B9D85EE95AACD105FBA6 /* StoreKit.framework in Frameworks */,
+				0FD09E0A8E9E2BA6E03FA383DAD8B147 /* SwrveConversationSDK.framework in Frameworks */,
+				850E95231F8FC0EE0B0FD056688CC395 /* SwrveSDKCommon.framework in Frameworks */,
+				8D9426DF8F6B4AA0B0E7AA29A8ED5834 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CEC02CBB223B452E5BB3287E969EC16 /* Pods */ = {
+		0B1D5748087CD37FC5EF9B42BCDB416A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9C1282F93E21C53A10D63E6B2C4892D7 /* AdvertileSDK */,
+				5FCD3907B8D5FA792D8C064AFF0F399F /* AbTrackingLib */,
+				5D25D8D6B8D85D9D5DF41904453A9244 /* SwrveConversationSDK */,
+				CA32B98F9563A7B86AC4B00A7BD0BAB1 /* SwrveSDK */,
+				0C13FA82705D262344F0DBD0AFC3A6FF /* SwrveSDKCommon */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		0C13FA82705D262344F0DBD0AFC3A6FF /* SwrveSDKCommon */ = {
+			isa = PBXGroup;
+			children = (
+				306A3F7BB95DC39CE184BA62CDBCBF61 /* SwrveCommon.h */,
+				62DEEBAD2D90DB3180A195D312A3BFF8 /* SwrveCommon.m */,
+				9CACC6E2DAAD167B5BCFED8B4132F6C5 /* SwrveCommonConnectionDelegate.h */,
+				B8FC10C64C37F461673D35F16A665DB0 /* SwrveCommonConnectionDelegate.m */,
+				758881DEE37699FB4E67D726E0587E5B /* SwrveSignatureProtectedFile.h */,
+				7F1EAD8CC49C8BE06AF01AF9DC9AEC32 /* SwrveSignatureProtectedFile.m */,
+				D7DE4F9E5F4C7D68B498AC016307C06D /* Support Files */,
+			);
+			path = SwrveSDKCommon;
 			sourceTree = "<group>";
 		};
 		0DC16837D19DD213D20F351B9EB962BD /* Pods-AdvertileSDK_Tests */ = {
@@ -120,22 +650,103 @@
 			path = "Target Support Files/Pods-AdvertileSDK_Tests";
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		5B4252666449F42E18AD4563E185EFC3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		656A2D30D415274B344B9A5EAD001C62 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				03A92AAF9292B7630A7F3BA18F1CDD0D /* AdvertileSDK.framework */,
-				BB10A136D0C90F347E73D1FE23492C58 /* Pods_AdvertileSDK_Example.framework */,
-				4EBB553C5323BE553FA9EF44A90024FA /* Pods_AdvertileSDK_Tests.framework */,
+				C24C20FB8A9080F2A494F4C21E8BBEA1 /* AbTrackingLib.bundle */,
+				EC9DAEB59F84D8857732857DB62C7F8B /* AbTrackingLib.framework */,
+				132E284CCDD5A883EE84809CF709F575 /* AdvertileSDK.framework */,
+				767B70EA9A26BBE52AEE0AB29D7D4660 /* Pods_AdvertileSDK_Example.framework */,
+				6881BEB7CB5BAF6853A61E66BBD621AC /* Pods_AdvertileSDK_Tests.framework */,
+				99E6A59DADFFD60E57B039F7B8C1CE64 /* SwrveConversationSDK.framework */,
+				8E8272567A51C84C5506C6E98CE2D2D8 /* SwrveSDK.framework */,
+				78F05CB7E390542F5AD441558E34DC31 /* SwrveSDKCommon.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5D25D8D6B8D85D9D5DF41904453A9244 /* SwrveConversationSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5CA456FCB04C67D6D3D6644171FCE5D1 /* SwrveBaseConversation.h */,
+				00A68B567C371297046CD431FF4E2875 /* SwrveBaseConversation.m */,
+				35F9C9647BA2BCCA68CB108C93C6E081 /* SwrveContentHTML.h */,
+				E9A09CE7B902F25ADB373E1D97B67B12 /* SwrveContentHTML.m */,
+				D89735400F7A9329AEE494DB36ECE62E /* SwrveContentImage.h */,
+				2175A912A5E79C4DF6ADE060FB5F35F6 /* SwrveContentImage.m */,
+				19D00BD0D9B99DE5012EFFEFA1929BBE /* SwrveContentItem.h */,
+				3FB2BCD237D5FD934768230FBE7C226E /* SwrveContentItem.m */,
+				8F92E46717FC0F247B6FC2ADF921A2CC /* SwrveContentSpacer.h */,
+				841155CC960088283E0E588ED585B2A2 /* SwrveContentSpacer.m */,
+				7F10ABF243339D29A359B7E45C9DDBF6 /* SwrveContentStarRating.h */,
+				A8671FB8D448394D6DDB528B6E6EE8EB /* SwrveContentStarRating.m */,
+				6136731837AB655279CA11F3337B7B8A /* SwrveContentStarRatingView.h */,
+				0DDDB05CCB6724F1615B0FBC44499F79 /* SwrveContentStarRatingView.m */,
+				BE8802DBBA8D682F715A566E2A98FBC2 /* SwrveContentVideo.h */,
+				DCD948309BF94225800FCA00245D84E4 /* SwrveContentVideo.m */,
+				0213887DC60C645781A7ABC4AA87144D /* SwrveConversationAtom.h */,
+				8182BE4C15E949F6DB317650CE0FE70D /* SwrveConversationAtom.m */,
+				F93EA0DE75B438383CA5881948F91EDC /* SwrveConversationAtomFactory.h */,
+				810AD898F128958142207E4FF47B2F33 /* SwrveConversationAtomFactory.m */,
+				65C3F09BE1E031012C162B6E8799945D /* SwrveConversationButton.h */,
+				A51997B272663A9D359E88722C55BC1E /* SwrveConversationButton.m */,
+				F339CA190961A114F23250090CA326A9 /* SwrveConversationContainerViewController.h */,
+				AE4BA6F3E540BF51060FD8D46D9525E5 /* SwrveConversationContainerViewController.m */,
+				283672C547CAD39AC11A1C2831F62101 /* SwrveConversationEvents.h */,
+				BE30E6F4EAA56B9E7626C09C3BDFE907 /* SwrveConversationEvents.m */,
+				842A7D075BC7BABDF9D0B935A04CA70D /* SwrveConversationItemViewController.h */,
+				D5B54C84B83359A36E702F695166F154 /* SwrveConversationItemViewController.m */,
+				F9764D4A7B747162F0618824D14B7403 /* SwrveConversationPane.h */,
+				AAF6B2D496C868F53675E152DC5DC0DE /* SwrveConversationPane.m */,
+				3B7371E5009D0390BF236E1F2AD9425D /* SwrveConversationResource.h */,
+				D51499F4CD19FDFB98C8BF90F3FC3803 /* SwrveConversationResource.m */,
+				F2D5EEA517DED139B8846C1D9ADE2C29 /* SwrveConversationsNavigationController.h */,
+				D243EE8A440BA09048F3C44FBFCA5136 /* SwrveConversationsNavigationController.m */,
+				B5D362AA7CF1C93769832E40488C2B84 /* SwrveConversationStyler.h */,
+				DCA97F82CC8F00A3ADF033FFF2ED0FB7 /* SwrveConversationStyler.m */,
+				A6788717BA24653CBEED75A3E93BECB2 /* SwrveConversationUIButton.h */,
+				E53E96962AE908CCC5DD076CB49ED2E6 /* SwrveConversationUIButton.m */,
+				7EF8D3412AC5D2C3C280D743F806D551 /* SwrveInputItem.h */,
+				0071E5E9C8701AF4FA8075CF12137DE7 /* SwrveInputItem.m */,
+				B8C015A0F6834F8D8810E981E59CF43F /* SwrveInputMultiValue.h */,
+				95620427FF3E2C4ED98ED5FB20B9E1FC /* SwrveInputMultiValue.m */,
+				77B4D2BB0C53253A0D2903345C0EFC84 /* SwrveMessageEventHandler.h */,
+				643259FD21DA8366B4BFE96EF97EF82A /* SwrveSetup.h */,
+				2181F390A227254E0C90FB7322ECA009 /* UINavigationController+KeyboardResponderFix.h */,
+				F6A956D9FD95B522577F9F97A21279F7 /* UINavigationController+KeyboardResponderFix.m */,
+				E3AE2DA61A03BC5D059D4490AEA695EE /* UIWebView+YouTubeVimeo.h */,
+				942A7AFE6DE469863026CEF29DF049EE /* UIWebView+YouTubeVimeo.m */,
+				9D089E6FEEE4A5F62DF1E11DDBE3FD46 /* Resources */,
+				C45C1486A4053F1A66A94598A6CF06AC /* Support Files */,
+			);
+			path = SwrveConversationSDK;
+			sourceTree = "<group>";
+		};
+		5F77C8D6815AB3DDA82DE9CA9B07108B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89563F8B9BFA77819CD3FE0EA50DF47C /* AbTrackingLib.modulemap */,
+				39B240BF5C26163D3DE11C7906B6DB0E /* AbTrackingLib.xcconfig */,
+				0A08C1222A77E97FB9F720A73D5DC9EC /* AbTrackingLib-dummy.m */,
+				DA9C5CE926480DBEA5DE11718B47E21F /* AbTrackingLib-prefix.pch */,
+				CC1222F8F55979ACF9693F911222EE3D /* AbTrackingLib-umbrella.h */,
+				FE53DCAF0BEB9C3445CD26AC7BEA9170 /* Info.plist */,
+				F759FF820FF25D0B408795CBAC35DFCA /* ResourceBundle-AbTrackingLib-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AbTrackingLib";
+			sourceTree = "<group>";
+		};
+		5FCD3907B8D5FA792D8C064AFF0F399F /* AbTrackingLib */ = {
+			isa = PBXGroup;
+			children = (
+				3FCA7978CC855D0F9844B98EEDEA8744 /* ABTracker.h */,
+				71C67CC822A5F70849C77C7A0DEB6BB0 /* ABTracker.m */,
+				702926581EEB6FDEFD4C8AC8DD18F864 /* NSURLConnection+Blocks.h */,
+				4FDC88F0473C675EC97D4AB79006995E /* NSURLConnection+Blocks.m */,
+				5F77C8D6815AB3DDA82DE9CA9B07108B /* Support Files */,
+			);
+			path = AbTrackingLib;
 			sourceTree = "<group>";
 		};
 		6E64D7C73EAE996428B860D179DEF0B7 /* Pods-AdvertileSDK_Example */ = {
@@ -156,6 +767,40 @@
 			path = "Target Support Files/Pods-AdvertileSDK_Example";
 			sourceTree = "<group>";
 		};
+		734DFB4E34FB594301B1695CDBCA42F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E364B59E22AB3E60C0014142FE263E0 /* AbTrackingLib.framework */,
+				4F7BFECEE52A3D29D8A94E222ADBB849 /* SwrveConversationSDK.framework */,
+				30071147ED49FEEC80953469EB22ED77 /* SwrveSDK.framework */,
+				33FE56A56A0FEC66E415835EDA5461C3 /* SwrveSDKCommon.framework */,
+				E9CCBB5D4D1650FD73CAE2BCB5950458 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7459B10BA64FC70E535ADF542F11CD02 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9524DD51231F3E589C69881A17FDE64 /* Info.plist */,
+				11BF424501F57C7C5BE093559FF518FF /* SwrveSDK.modulemap */,
+				A458421E8876AB6DAEC56171143F0C18 /* SwrveSDK.xcconfig */,
+				CD5E2001ECF179A061EE6F4929699882 /* SwrveSDK-dummy.m */,
+				05BD7F422F302C7777B2EFB5A6568BC3 /* SwrveSDK-prefix.pch */,
+				93821BADEC5E838F3204F5F4712A6027 /* SwrveSDK-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwrveSDK";
+			sourceTree = "<group>";
+		};
+		7632590F6AF3CCBE4C69F4FFA27EA506 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA92174E010A2CD812A2BC952B2C03A2 /* AdvertileSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		7BC8DC04247294665B96CE74AB5557C7 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,53 +814,269 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				0CEC02CBB223B452E5BB3287E969EC16 /* Pods */,
-				656A2D30D415274B344B9A5EAD001C62 /* Products */,
+				7632590F6AF3CCBE4C69F4FFA27EA506 /* Development Pods */,
+				734DFB4E34FB594301B1695CDBCA42F6 /* Frameworks */,
+				0B1D5748087CD37FC5EF9B42BCDB416A /* Pods */,
+				5B4252666449F42E18AD4563E185EFC3 /* Products */,
 				7BC8DC04247294665B96CE74AB5557C7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		97A680BA2E07B3ABE4654D0CD0F44663 /* Support Files */ = {
+		9D089E6FEEE4A5F62DF1E11DDBE3FD46 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				06E0ED3CAD667D26D5638C9D0CB6D6A1 /* AdvertileSDK.modulemap */,
-				0C6A319502EDEEED7690741AB788C59D /* AdvertileSDK.xcconfig */,
-				D9B4B05C0045EFC4FC2F4795A4AE67CC /* AdvertileSDK-dummy.m */,
-				0602B1A43F7A65841AFBBAD78EECDCF4 /* AdvertileSDK-prefix.pch */,
-				6E7BE6DCD0602B0372ACDE214FE48D4B /* AdvertileSDK-umbrella.h */,
-				34375826DDD42F7D496DFB099E19687B /* Info.plist */,
+				439ACF8DB4E5F9C557D044B1AD0C645F /* close_button.png */,
+				73890E71A4A1DCE65A7917BA27C334BB /* close_button@2x.png */,
+				9A31C215D07809EE9AC165EDFBEEBB0E /* cvsr_grouped_cell_bottom.png */,
+				0E1FA64FC90D890D924F0A10D3E331FB /* cvsr_grouped_cell_bottom@2x.png */,
+				7BCABC1D6BB4E432009AF2632702DA62 /* cvsr_grouped_cell_bottom_ios7.png */,
+				26568311741E6D1EAAF3FF3CB56666F6 /* cvsr_grouped_cell_bottom_ios7@2x.png */,
+				516876F86FDFFF4D5E35C3C58F7E0569 /* cvsr_grouped_cell_bottom_tapped.png */,
+				D04738081C7CD38656D38AB0F93E1221 /* cvsr_grouped_cell_bottom_tapped@2x.png */,
+				5B9D91B5A59A07C759135EEE64526FFD /* cvsr_grouped_cell_mid.png */,
+				F8A473D5757CB0A70417DA7B183C4853 /* cvsr_grouped_cell_mid@2x.png */,
+				5C0C74A82453867A73F061623D0C6DC5 /* cvsr_grouped_cell_mid_ios7.png */,
+				2874863A2D4C93679B742F7DC8659011 /* cvsr_grouped_cell_mid_ios7@2x.png */,
+				EA0D4E4A3C41425427217071C36F486F /* cvsr_grouped_cell_mid_tapped.png */,
+				907F93CC453EE1E07D1C5DDA1775FAE7 /* cvsr_grouped_cell_mid_tapped@2x.png */,
+				A6CB5B7D5490654F6A67A0196B325E08 /* cvsr_grouped_cell_single.png */,
+				C30FAE2AB61F40F7123E027ADB8AD78F /* cvsr_grouped_cell_single@2x.png */,
+				0C277CB8CC3BC5F6A1E56961A1D2D55C /* cvsr_grouped_cell_single_ios7.png */,
+				CEDEF403C01DC1EC0352498762CA3C54 /* cvsr_grouped_cell_single_ios7@2x.png */,
+				12CE700FF2FDB19FCA04161F5DE9BB9E /* cvsr_grouped_cell_single_tapped.png */,
+				2E60F5E404EA4F26458E8F4F824633CF /* cvsr_grouped_cell_single_tapped@2x.png */,
+				5E00E3F8B63D19FEDA15DB74EF52BD99 /* cvsr_grouped_cell_top.png */,
+				D02AEA42EC37112D2D8616256D766437 /* cvsr_grouped_cell_top@2x.png */,
+				36BEAB317469EA5D44C4F642A196DFCC /* cvsr_grouped_cell_top_ios7.png */,
+				A46D70457A94F26BA05247A1CDF4D6A0 /* cvsr_grouped_cell_top_ios7@2x.png */,
+				569112CB9ABFD40697E8E6B82B1EA940 /* cvsr_grouped_cell_top_tapped.png */,
+				B3F3BD55DA765BF81810AA3BF8E76262 /* cvsr_grouped_cell_top_tapped@2x.png */,
+				FBB87243881B8FCD313F5C924F277366 /* cvsr_keyboardBackground.png */,
+				19029185C06E35422F8EDD69A0353941 /* cvsr_keyboardBackground@2x.png */,
+				F57927282EDC1C5B8EBB0651C8CDAE53 /* star-empty.png */,
+				5004449997A205CDFDCFA16DA32A926D /* star-empty@2x.png */,
+				C6CA4E65FF81B997D86782EE572B3E09 /* star-full.png */,
+				36B48F44EA5D18859B21416611E09B85 /* star-full@2x.png */,
+				EC76E2D3DCB2187AAE07382940998CBA /* SwrveConversation.storyboard */,
+				13B979F2C61C73E1F9CB6B916F52706D /* VGConversationKitResources-Info.plist */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/AdvertileSDK";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		9C1282F93E21C53A10D63E6B2C4892D7 /* AdvertileSDK */ = {
+		A20C17CC4D7CBC9D79CAFD3DE1EEF0E2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5EF642030C91A26CD040815FC6188A6A /* AdvertileSDK.h */,
-				46332524D1B4CDB6AEFFE880421B59BC /* AdvertileSDK.m */,
-				97A680BA2E07B3ABE4654D0CD0F44663 /* Support Files */,
+				494D7E361D749264000332FD /* AdvertileSDK.h */,
+				494D7E371D749264000332FD /* AdvertileSDK.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C45C1486A4053F1A66A94598A6CF06AC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6C291B1906255C9878EDAFD8A031310 /* Info.plist */,
+				674FA1DF835C637576F899C85F1C1B38 /* SwrveConversationSDK.modulemap */,
+				D0E0240136F3718C99E8DEF1EA52520A /* SwrveConversationSDK.xcconfig */,
+				ED34A08C76EA4CC5BC578AFA083858B2 /* SwrveConversationSDK-dummy.m */,
+				221D86EBC44311E070A7C93DD32721C1 /* SwrveConversationSDK-prefix.pch */,
+				FD932BD7167BF09432860FC07F533E14 /* SwrveConversationSDK-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwrveConversationSDK";
+			sourceTree = "<group>";
+		};
+		C70305FAA4387696AEE0E8BB00DB4490 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0935751D342586B16BCD3DA71274C2AC /* AdvertileSDK.modulemap */,
+				790CA40C7CF4C13558741D10E38BE049 /* AdvertileSDK.xcconfig */,
+				62ECC7E1505248CB3EF7D17E600D2E0E /* AdvertileSDK-dummy.m */,
+				58BF5F1ECEAD5AD9C6CF1CB818D8E9E4 /* AdvertileSDK-prefix.pch */,
+				DFC1AA4F7B280F1B3B4764D3E4428893 /* AdvertileSDK-umbrella.h */,
+				4CF9A4E199DAF355093CE16A96BC5CC9 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AdvertileSDK";
+			sourceTree = "<group>";
+		};
+		CA32B98F9563A7B86AC4B00A7BD0BAB1 /* SwrveSDK */ = {
+			isa = PBXGroup;
+			children = (
+				9EDA9C6C92E27CD08F62533E9DB16269 /* ISHPermissionCategory.h */,
+				10508E425C4D3EF3A4AFF3CC077A54CB /* ISHPermissionRequest.h */,
+				C96C68CE443B28C9F95D1361F92C4509 /* ISHPermissionRequest.m */,
+				A701445E7B3F4D9AE362377995D26418 /* ISHPermissionRequest+All.h */,
+				1DC9003FA604F981FBC9855C41505FC2 /* ISHPermissionRequest+All.m */,
+				9637499C7F76C34E12B9DD9E9AEDC06E /* ISHPermissionRequest+Private.h */,
+				9AF7E61FBF41BD61125AD0B22A0C177D /* ISHPermissionRequestAddressBook.h */,
+				F9186C15631D8E30630BB1B270984BC0 /* ISHPermissionRequestAddressBook.m */,
+				E17127A792D5076401DB0458D8DA6AB4 /* ISHPermissionRequestLocation.h */,
+				0C3A551DB7C380CD718DF5F18DB3A65D /* ISHPermissionRequestLocation.m */,
+				1E200E783FA086090D71DC0532A86770 /* ISHPermissionRequestNotificationsRemote.h */,
+				E648391CB1ED1134FE715F2B5BF826F9 /* ISHPermissionRequestNotificationsRemote.m */,
+				C1EF733DBB3E856F95C10AFA48A019E9 /* ISHPermissionRequestPhotoCamera.h */,
+				8B85BDBB778EA045E1EC629682FA8B30 /* ISHPermissionRequestPhotoCamera.m */,
+				BDD822F22E73967F725F17A80398C0C7 /* ISHPermissionRequestPhotoLibrary.h */,
+				B936A255616E2E07B507628799C3735A /* ISHPermissionRequestPhotoLibrary.m */,
+				98B4E65B83C8892F798FC2FB57146E38 /* Swrve.h */,
+				1D9C260A866CF36C77A21F816E923841 /* Swrve.m */,
+				6AFCAF986D997B6B58D02927B070FFB1 /* SwrveBaseCampaign.h */,
+				21472AEE81480AA5882F730DA220E66C /* SwrveBaseCampaign.m */,
+				A435B7DFF87896C26D776B2BC3176D0B /* SwrveButton.h */,
+				9DD267B135CF6020C56F37111EB38157 /* SwrveButton.m */,
+				03FB19ED2526004F2CE0DDD10883CF2B /* SwrveCampaign.h */,
+				9361A44789B6CEACD025421E81D18856 /* SwrveCampaign.m */,
+				7F1EE4FF86195E6625D14B3E23654A7E /* SwrveCampaignStatus.h */,
+				CC0C1C9893D30A9C099EB38B64D1F260 /* SwrveConversation.h */,
+				BD1703D259C40C359DE8F2F96B683BBB /* SwrveConversation.m */,
+				23282DAC1E86768D7BBF32635C6167F8 /* SwrveConversationCampaign.h */,
+				9CB73BA2AB2C014CD819D3782F61CD04 /* SwrveConversationCampaign.m */,
+				A19E7245DB61463083C42087C7A14144 /* SwrveImage.h */,
+				907E10A239C674FB3CFCB15BDC028B8F /* SwrveImage.m */,
+				28153A474946CC89AC09ADF5DCB0C43B /* SwrveInterfaceOrientation.h */,
+				C7E37CC1C018DE14031D5099833E1140 /* SwrveInternalAccess.h */,
+				0C791E70176EAAEF14864269F74B1C49 /* SwrveMessage.h */,
+				6E6FCFB52EAE7DADEF8A271A5D65C944 /* SwrveMessage.m */,
+				7D6159F84977537374A49CED647E24FD /* SwrveMessageController.h */,
+				37DAAD5B0BA40F95AAF87854ACC42A32 /* SwrveMessageController.m */,
+				514A024433D3D71F4685B56AE6619691 /* SwrveMessageFormat.h */,
+				F006F1B3D96151EC017F60ABB4598F68 /* SwrveMessageFormat.m */,
+				7D5DA43910D2C297F806B23C066F4777 /* SwrveMessageViewController.h */,
+				1BCFB85EEAE6228D312637C4CE98FA11 /* SwrveMessageViewController.m */,
+				A1C482B8C45632A26DFEF6AFB00A53CE /* SwrvePermissions.h */,
+				E44AB926AB57A9E3C76C113C30568077 /* SwrvePermissions.m */,
+				15FF06E51FB112A32FD72492D6B175A1 /* SwrvePrivateBaseCampaign.h */,
+				CD685A7C41C06C767668D50861BA6022 /* SwrveReceiptProvider.h */,
+				7F4C5EFEB9C6C35358C5C9AFFBA5957A /* SwrveReceiptProvider.m */,
+				8EDC4E32166CDF8A596DABE3D22A06CE /* SwrveResourceManager.h */,
+				38F774EFE97E6E4DBE0E8E0FB832E3F4 /* SwrveResourceManager.m */,
+				CF241A29739C6707FDC463EBE05C73F4 /* SwrveSwizzleHelper.h */,
+				28D98755D78ED8892CB92F04F773D180 /* SwrveSwizzleHelper.m */,
+				84CF0AA2C131D87CABDAD2FF87CBCAD1 /* SwrveTalkQA.h */,
+				6A24EB4B0CFDFDC1947B486042410194 /* SwrveTalkQA.m */,
+				7459B10BA64FC70E535ADF542F11CD02 /* Support Files */,
+			);
+			path = SwrveSDK;
+			sourceTree = "<group>";
+		};
+		CACCFCCD54D5BEE821978DBCD569C4C3 /* AdvertileSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A20C17CC4D7CBC9D79CAFD3DE1EEF0E2 /* Classes */,
 			);
 			path = AdvertileSDK;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		D7DE4F9E5F4C7D68B498AC016307C06D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				10A8296FF5DFEBDFCEA03EFD964246A3 /* Info.plist */,
+				8FB68FF87B112E1286D6D5DE55312EFE /* SwrveSDKCommon.modulemap */,
+				68EA3E0850DDC1383E9B35A087D75F12 /* SwrveSDKCommon.xcconfig */,
+				4328BE1D742487D928A61D22A6F47DF0 /* SwrveSDKCommon-dummy.m */,
+				EC27052494E31392F6E7A73923957FCD /* SwrveSDKCommon-prefix.pch */,
+				7CDFC0443688ED4D0F0E19C4EFA3086C /* SwrveSDKCommon-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/SwrveSDKCommon";
+			sourceTree = "<group>";
+		};
+		DA92174E010A2CD812A2BC952B2C03A2 /* AdvertileSDK */ = {
+			isa = PBXGroup;
+			children = (
+				CACCFCCD54D5BEE821978DBCD569C4C3 /* AdvertileSDK */,
+				C70305FAA4387696AEE0E8BB00DB4490 /* Support Files */,
+			);
+			name = AdvertileSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E9CCBB5D4D1650FD73CAE2BCB5950458 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7701B441CF865943257AAEA39226AC90 /* AddressBook.framework */,
+				41AC8148B52A973A3678130DFAEC3B31 /* AssetsLibrary.framework */,
+				30E9A38215E26AC5F53C07BAD5ADDE9E /* AVFoundation.framework */,
+				AB85B46E5E8E5FA7AC5DBA4D75526B40 /* CFNetwork.framework */,
+				2510F26339CA6A09E013B196A933A315 /* Contacts.framework */,
+				41C88045383ED27CF9BD53D0393AC4FA /* CoreLocation.framework */,
+				69E223EA4BDD35F3A1217F3F8BA0F444 /* CoreTelephony.framework */,
+				CD169AD926613FA8BB174947FF6CF14F /* Foundation.framework */,
+				2CF031CEE80AADA1E44E34A0CA0A9C5B /* MessageUI.framework */,
+				EC7F895AD6DA2C983D9F7DFBDEE3B75F /* Photos.framework */,
+				C5BCC955489C25F9C991DAFBD2B296C1 /* QuartzCore.framework */,
+				0630A72CEF8381029EEF3BA63DE8760A /* Security.framework */,
+				5DF60C86FA4646B9046EA3B4695B2B95 /* StoreKit.framework */,
+				060C547F50409CB808DBA6B532A6E943 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1277EE2FD8866B2A1BE3DCF5B0D9BA7B /* Headers */ = {
+		005D19D1DDB893758DAD02E1163B798D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DEFAA2A430A55BAD0B5EFC3F4ECE26E /* Pods-AdvertileSDK_Example-umbrella.h in Headers */,
+				494D7E381D749264000332FD /* AdvertileSDK.h in Headers */,
+				3E6DFC84E92DC3FC76C1152EF4ACE198 /* AdvertileSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11654399EE17660E33D75E2BE2735EFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CCDE31701ECB5AF48EFA6110A370B7F /* Pods-AdvertileSDK_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		641CBE872E174AA6255AE9E51ED028BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166DBA6CC9D2D17DDC7DD205F86B86A1 /* ABTracker.h in Headers */,
+				47A67C3740D2A5ABB3BEB70E8E80425D /* AbTrackingLib-umbrella.h in Headers */,
+				6D71D2CCE32AD8AE2798F1D42BF0A38B /* NSURLConnection+Blocks.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5EB4C531EDC90D5D1E5ABFF9FBFF19C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA501D2235C338FD139CBA10F16AB7A /* ISHPermissionCategory.h in Headers */,
+				064B8FB6D4E7BF39652BAF50D94390DC /* ISHPermissionRequest+All.h in Headers */,
+				ADC6783741966C306978833F6B1345E7 /* ISHPermissionRequest+Private.h in Headers */,
+				757D544959F0495CF574E696F8841E47 /* ISHPermissionRequest.h in Headers */,
+				9BA76A9085DDCE5C0028E2C11DFD3FF2 /* ISHPermissionRequestAddressBook.h in Headers */,
+				EB60193F7A3C4B37D1C07B9735068629 /* ISHPermissionRequestLocation.h in Headers */,
+				873C53EE72A7F5E3B649136BCE4CC21A /* ISHPermissionRequestNotificationsRemote.h in Headers */,
+				45DFFEC806FEF85B539A57B49146BAFA /* ISHPermissionRequestPhotoCamera.h in Headers */,
+				34E3ED47462947DA47EC048CFAB6D888 /* ISHPermissionRequestPhotoLibrary.h in Headers */,
+				A5D703848E3199E351B53E06EBF19943 /* Swrve.h in Headers */,
+				DE03756EE26447395BE8FD387906B447 /* SwrveBaseCampaign.h in Headers */,
+				A7081D03A310D7CA00D1DE2B098BE4CA /* SwrveButton.h in Headers */,
+				5B4A3EECBEB8417BCF835AF7066F015F /* SwrveCampaign.h in Headers */,
+				4A8A6B4A26A9E222F03895E4A2DBE1E8 /* SwrveCampaignStatus.h in Headers */,
+				D64DCE0B817C7986B6F11E87840EE5A5 /* SwrveConversation.h in Headers */,
+				E4943B0156D57806FC833D4979D3EE87 /* SwrveConversationCampaign.h in Headers */,
+				9AC35EE6EB99788DDAB60ADB4A628534 /* SwrveImage.h in Headers */,
+				448187D950714D44906F7AA5746CCF19 /* SwrveInterfaceOrientation.h in Headers */,
+				C2EEC7BCE836221C09BE5871AA73F06C /* SwrveInternalAccess.h in Headers */,
+				4351C26BFF4AB71ADD43FA70E535ED3B /* SwrveMessage.h in Headers */,
+				B937D8170B71CC28EA3CE87AF92CE205 /* SwrveMessageController.h in Headers */,
+				85F41BB637DB824116F6300D3952B1E0 /* SwrveMessageFormat.h in Headers */,
+				BCCDEB6E593BF087D9223520D04E82B9 /* SwrveMessageViewController.h in Headers */,
+				F0459110607D312A18EC17A05C29EADC /* SwrvePermissions.h in Headers */,
+				567E78303263AD710591202DEFAA7E10 /* SwrvePrivateBaseCampaign.h in Headers */,
+				B4BDEF88C9612FCE8BEC3036F35E1A20 /* SwrveReceiptProvider.h in Headers */,
+				EB278C3E89F5103E1F304DAFBAB36503 /* SwrveResourceManager.h in Headers */,
+				677A192DC08F43FF0E07D23F66F8B036 /* SwrveSDK-umbrella.h in Headers */,
+				39B2313B0DAF0204D92351874E2839D2 /* SwrveSwizzleHelper.h in Headers */,
+				1D4634CFCF99EE6B6B1D20BE37EF8BAD /* SwrveTalkQA.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,33 +1088,149 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE91B61CB36DF3B3020785DC3FFA7037 /* Headers */ = {
+		E7316BD6FC0F7B997E758B0B528BFED5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D53CC22EA30ACB4B6FF32552890FD402 /* AdvertileSDK-umbrella.h in Headers */,
-				C27039E94E25AFE93664FCFD8E713B97 /* AdvertileSDK.h in Headers */,
+				12B56CD7C2CAC3B175A368F0EE5C53EA /* SwrveCommon.h in Headers */,
+				1A8BE2F7186876B5DEC666AEF8E0233C /* SwrveCommonConnectionDelegate.h in Headers */,
+				5FBC7218F9BBB263CEE8B1382B348FAB /* SwrveSDKCommon-umbrella.h in Headers */,
+				05FD63AC1598A449761B6B33A184DFC1 /* SwrveSignatureProtectedFile.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC8BCAC514BAF8EF81C00FA7460F6489 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDCA53936976AED9F2C47DEB9EA5A24F /* SwrveBaseConversation.h in Headers */,
+				3FD78522169A3104AD1B3570B0090141 /* SwrveContentHTML.h in Headers */,
+				79C18730959A5AEE0F7784CE8CAFB381 /* SwrveContentImage.h in Headers */,
+				A0D6BB6F12ADF858BFD74E0C95219897 /* SwrveContentItem.h in Headers */,
+				454AC1A9A059606384F366CB56DA3815 /* SwrveContentSpacer.h in Headers */,
+				FA31B3695A0468255EC2E49FED921AB6 /* SwrveContentStarRating.h in Headers */,
+				1D36825D890E7F3F712C34A2B52488AD /* SwrveContentStarRatingView.h in Headers */,
+				0046D3CA8B9FCF354BEB2AE188227485 /* SwrveContentVideo.h in Headers */,
+				8CF5B76CA97B516C344A0C54CB7F4CEA /* SwrveConversationAtom.h in Headers */,
+				48D848A6924E1167BE1BDFBBC9D035CA /* SwrveConversationAtomFactory.h in Headers */,
+				44763B16CD156D606E6F3CC00C04236D /* SwrveConversationButton.h in Headers */,
+				12C64F3E8F9D57EFD8AEAC3D6A426AF5 /* SwrveConversationContainerViewController.h in Headers */,
+				3557F42C0F5608BA50843D2BA71F54B0 /* SwrveConversationEvents.h in Headers */,
+				26E33438E233D24534EBD8007BFBF4F2 /* SwrveConversationItemViewController.h in Headers */,
+				0AEA40E2CB67FE3097F38B87BE7BAD2A /* SwrveConversationPane.h in Headers */,
+				EFA38C8C89F840E3C6F3C2FF81286BDB /* SwrveConversationResource.h in Headers */,
+				7D59F4C466DB236AD02BC6F99C8DBB76 /* SwrveConversationSDK-umbrella.h in Headers */,
+				B3D82F1EF7416F6F31B33BF1FD8E3714 /* SwrveConversationsNavigationController.h in Headers */,
+				04909740BC79ED4464971D9C5AD482BF /* SwrveConversationStyler.h in Headers */,
+				311DA1631C8782004046B3F601BE62BE /* SwrveConversationUIButton.h in Headers */,
+				0E3329703CFA0E736B66237231B225BB /* SwrveInputItem.h in Headers */,
+				958769A5C8CD71429DD18CD163847866 /* SwrveInputMultiValue.h in Headers */,
+				E7984BDA3FC20CDA94B4772B5FF5D8E1 /* SwrveMessageEventHandler.h in Headers */,
+				306B6F5642615DC02E528171A830BF9D /* SwrveSetup.h in Headers */,
+				FD394CA3726CE8C0F9B4EE0949E400C2 /* UINavigationController+KeyboardResponderFix.h in Headers */,
+				DE602BC20BEFFF05253531CB29DC5E12 /* UIWebView+YouTubeVimeo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A570D0114AD1D51A692DF6B13E535698 /* AdvertileSDK */ = {
+		940007555684AE53CDE4C28B3C05C680 /* AbTrackingLib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D95CC1EFB5C694515FAF36DAF25B1C3F /* Build configuration list for PBXNativeTarget "AdvertileSDK" */;
+			buildConfigurationList = 8FB76E0B6EE6D20467FFB62D68189D69 /* Build configuration list for PBXNativeTarget "AbTrackingLib" */;
 			buildPhases = (
-				61DD9680CBAEB39C7237E8B749CAF981 /* Sources */,
-				66207522E0DFFF8DE2AF41C7C84A008F /* Frameworks */,
-				FE91B61CB36DF3B3020785DC3FFA7037 /* Headers */,
+				B06AC25D4DCBAFF64DFD7658441BCA2D /* Sources */,
+				83EEE1DA706B38441A1D333922A91089 /* Frameworks */,
+				7AC21E108FF9403CF09C452B9D82F87F /* Resources */,
+				641CBE872E174AA6255AE9E51ED028BC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B3E34F60DB9C91BDE351AFD79212A12 /* PBXTargetDependency */,
+			);
+			name = AbTrackingLib;
+			productName = AbTrackingLib;
+			productReference = EC9DAEB59F84D8857732857DB62C7F8B /* AbTrackingLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0582D2BA86FFFFE52337D3618A94378 /* AbTrackingLib-AbTrackingLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EF90FC179E4F81E89140718493BBF5C /* Build configuration list for PBXNativeTarget "AbTrackingLib-AbTrackingLib" */;
+			buildPhases = (
+				EC027328B7C5E114E1E9B1FCEBB3A9E4 /* Sources */,
+				3F3F1339EB6F8F95B26FE878EAC83711 /* Frameworks */,
+				B0AEDE951FA114B647C893BEDDE57410 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = "AbTrackingLib-AbTrackingLib";
+			productName = "AbTrackingLib-AbTrackingLib";
+			productReference = C24C20FB8A9080F2A494F4C21E8BBEA1 /* AbTrackingLib.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		ADF5D8AFD2235153534269228172482D /* SwrveConversationSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C56567868BC7E4BECF2C3E4BBA198A5 /* Build configuration list for PBXNativeTarget "SwrveConversationSDK" */;
+			buildPhases = (
+				39389F9D8EA907E6208FB9DFD0CD00E5 /* Sources */,
+				D4670943C76B5F0E17255FCFC3D72A59 /* Frameworks */,
+				EC8BCAC514BAF8EF81C00FA7460F6489 /* Headers */,
+				A65E2BE27580B73C602301E8256DD5F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5F266BE0894D197A7DFB457B9E7D111 /* PBXTargetDependency */,
+			);
+			name = SwrveConversationSDK;
+			productName = SwrveConversationSDK;
+			productReference = 99E6A59DADFFD60E57B039F7B8C1CE64 /* SwrveConversationSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C0E4F3A8ACFB6E9404B71377DF2BB14D /* AdvertileSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F63C5B0B31A927D516B847326A6CFDAC /* Build configuration list for PBXNativeTarget "AdvertileSDK" */;
+			buildPhases = (
+				C7493CC709E80B15D836C688F0440B76 /* Sources */,
+				1F36E3F06736F7110E35CD7997D46632 /* Frameworks */,
+				005D19D1DDB893758DAD02E1163B798D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				741E6B7E9D124C293BCC851EEB92C4E5 /* PBXTargetDependency */,
+				007055ABA8D0661724C80DA9F5A4A087 /* PBXTargetDependency */,
+				9986FF888317AEA577B76E1882087BD6 /* PBXTargetDependency */,
+				14360C20BA372A4C2AA9B253F9F10B2B /* PBXTargetDependency */,
+			);
 			name = AdvertileSDK;
 			productName = AdvertileSDK;
-			productReference = 03A92AAF9292B7630A7F3BA18F1CDD0D /* AdvertileSDK.framework */;
+			productReference = 132E284CCDD5A883EE84809CF709F575 /* AdvertileSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4D972B489D5AD4C9DCA86B725539FB2 /* Pods-AdvertileSDK_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D326D85842A2CD52D93303400B6B8892 /* Build configuration list for PBXNativeTarget "Pods-AdvertileSDK_Example" */;
+			buildPhases = (
+				F2CD18E7E4B8583BB496341355A7252F /* Sources */,
+				8E215DA6DE8756BAB757436F7A7FAD8E /* Frameworks */,
+				11654399EE17660E33D75E2BE2735EFC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40C8759FB5FF0FC126F0773B859E49B3 /* PBXTargetDependency */,
+				4A8656D6218366459BCC2CDBF82A2825 /* PBXTargetDependency */,
+				9FFAC4CD365642A294EB63CC89F09949 /* PBXTargetDependency */,
+				FA98D394FE4CD9DADA4361C83F4D4556 /* PBXTargetDependency */,
+				637FBA04AE40C92C991AA448FADD3586 /* PBXTargetDependency */,
+			);
+			name = "Pods-AdvertileSDK_Example";
+			productName = "Pods-AdvertileSDK_Example";
+			productReference = 767B70EA9A26BBE52AEE0AB29D7D4660 /* Pods_AdvertileSDK_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		C771B5721B5DA49100B3784C0BB2F3E2 /* Pods-AdvertileSDK_Tests */ = {
@@ -270,25 +1247,43 @@
 			);
 			name = "Pods-AdvertileSDK_Tests";
 			productName = "Pods-AdvertileSDK_Tests";
-			productReference = 4EBB553C5323BE553FA9EF44A90024FA /* Pods_AdvertileSDK_Tests.framework */;
+			productReference = 6881BEB7CB5BAF6853A61E66BBD621AC /* Pods_AdvertileSDK_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F3EC7DC39E5C7EDA689E0FFC179E861C /* Pods-AdvertileSDK_Example */ = {
+		E2BAB78F96DAADF6C223E602C290569A /* SwrveSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17FD3D89C11C37E10EC6FE4550B00864 /* Build configuration list for PBXNativeTarget "Pods-AdvertileSDK_Example" */;
+			buildConfigurationList = A0EF96A21E314754A2A1FDFD13C326C5 /* Build configuration list for PBXNativeTarget "SwrveSDK" */;
 			buildPhases = (
-				824F09535F4A58660C9CD94E3E357E08 /* Sources */,
-				B75DB073D1073A42FF41ACC591C0437F /* Frameworks */,
-				1277EE2FD8866B2A1BE3DCF5B0D9BA7B /* Headers */,
+				21A2547A7E7ABE18E38FA550227C4343 /* Sources */,
+				EC4441753B516DAB2C519580D85D3AE8 /* Frameworks */,
+				D5EB4C531EDC90D5D1E5ABFF9FBFF19C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				839EFCD32D0EE4B9DC4A49ED5B7CD957 /* PBXTargetDependency */,
+				E65D92D5C31E32166DC90E39B6B29787 /* PBXTargetDependency */,
+				46A42FC38CBB3DC3D5D0D03478426562 /* PBXTargetDependency */,
 			);
-			name = "Pods-AdvertileSDK_Example";
-			productName = "Pods-AdvertileSDK_Example";
-			productReference = BB10A136D0C90F347E73D1FE23492C58 /* Pods_AdvertileSDK_Example.framework */;
+			name = SwrveSDK;
+			productName = SwrveSDK;
+			productReference = 8E8272567A51C84C5506C6E98CE2D2D8 /* SwrveSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FDA22FA12F4620528DCCFB018F338009 /* SwrveSDKCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F5532A58E5F2E7FB94281300703271B /* Build configuration list for PBXNativeTarget "SwrveSDKCommon" */;
+			buildPhases = (
+				C932E2A804C590CA2F224F68E9E2DF7E /* Sources */,
+				961AC9EF233659020B8F821FFF9D51D0 /* Frameworks */,
+				E7316BD6FC0F7B997E758B0B528BFED5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwrveSDKCommon;
+			productName = SwrveSDKCommon;
+			productReference = 78F05CB7E390542F5AD441558E34DC31 /* SwrveSDKCommon.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -308,24 +1303,141 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 656A2D30D415274B344B9A5EAD001C62 /* Products */;
+			productRefGroup = 5B4252666449F42E18AD4563E185EFC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A570D0114AD1D51A692DF6B13E535698 /* AdvertileSDK */,
-				F3EC7DC39E5C7EDA689E0FFC179E861C /* Pods-AdvertileSDK_Example */,
+				940007555684AE53CDE4C28B3C05C680 /* AbTrackingLib */,
+				A0582D2BA86FFFFE52337D3618A94378 /* AbTrackingLib-AbTrackingLib */,
+				C0E4F3A8ACFB6E9404B71377DF2BB14D /* AdvertileSDK */,
+				C4D972B489D5AD4C9DCA86B725539FB2 /* Pods-AdvertileSDK_Example */,
 				C771B5721B5DA49100B3784C0BB2F3E2 /* Pods-AdvertileSDK_Tests */,
+				ADF5D8AFD2235153534269228172482D /* SwrveConversationSDK */,
+				E2BAB78F96DAADF6C223E602C290569A /* SwrveSDK */,
+				FDA22FA12F4620528DCCFB018F338009 /* SwrveSDKCommon */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		7AC21E108FF9403CF09C452B9D82F87F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B73D6E1AC01095697AA49C6715DA87 /* AbTrackingLib.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A65E2BE27580B73C602301E8256DD5F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E887AC532CF2824FAF44A859E6797315 /* close_button.png in Resources */,
+				6D63EA34E1F517996A805BA177841148 /* close_button@2x.png in Resources */,
+				5882D6876A78409DDDEB81E05E2C6FB9 /* cvsr_grouped_cell_bottom.png in Resources */,
+				3EBE608ACDBA1D2E5345242B6958D549 /* cvsr_grouped_cell_bottom@2x.png in Resources */,
+				BD4BFFF6BBF7B194AB8235CEDDBD076C /* cvsr_grouped_cell_bottom_ios7.png in Resources */,
+				5FB2ED7C51075F46DA9F3DABC3DB1E9E /* cvsr_grouped_cell_bottom_ios7@2x.png in Resources */,
+				7EBF9E45376C60F08438690AF107ED8E /* cvsr_grouped_cell_bottom_tapped.png in Resources */,
+				5E3E73B5AF90692D442528DFC7FB7D24 /* cvsr_grouped_cell_bottom_tapped@2x.png in Resources */,
+				3347A2DE54EE6451FB4699DA24466218 /* cvsr_grouped_cell_mid.png in Resources */,
+				53A9BC9E4AF8FEA69D64E1D59441E651 /* cvsr_grouped_cell_mid@2x.png in Resources */,
+				CB915C8CFDF40DD86385F5015A67FBB4 /* cvsr_grouped_cell_mid_ios7.png in Resources */,
+				5A1615DCC5B4A6FF9F6704AF7D83B2BB /* cvsr_grouped_cell_mid_ios7@2x.png in Resources */,
+				25D58396DA023E6AA21795E6ED07B0E4 /* cvsr_grouped_cell_mid_tapped.png in Resources */,
+				A4D6DD00EFA122AF7E4FC0CFC0E504BF /* cvsr_grouped_cell_mid_tapped@2x.png in Resources */,
+				E196E3838EE52F9D208AE3C438F60FCF /* cvsr_grouped_cell_single.png in Resources */,
+				D64BA60DE90887022FBF0A28ACC145D7 /* cvsr_grouped_cell_single@2x.png in Resources */,
+				7D5832F3352A87829AF2E1002613E3C7 /* cvsr_grouped_cell_single_ios7.png in Resources */,
+				6FA1B0BF8FB211D462C54F468D471440 /* cvsr_grouped_cell_single_ios7@2x.png in Resources */,
+				BD650205D39190F443EE4402B458D999 /* cvsr_grouped_cell_single_tapped.png in Resources */,
+				2B2550846E5FC1BB38F793CB475B610F /* cvsr_grouped_cell_single_tapped@2x.png in Resources */,
+				074ECB9B51BCF5B18CE4170E78B57009 /* cvsr_grouped_cell_top.png in Resources */,
+				2D56EA6C125B8E2B947A3519BD648AC7 /* cvsr_grouped_cell_top@2x.png in Resources */,
+				9236AC4F297509E7623704F0EBEFDDFD /* cvsr_grouped_cell_top_ios7.png in Resources */,
+				932D9C9C60C8A675D0BBE93586AF1CF8 /* cvsr_grouped_cell_top_ios7@2x.png in Resources */,
+				A19BA8E98FC8B638FDF5DE8AACAD1861 /* cvsr_grouped_cell_top_tapped.png in Resources */,
+				0F411DCF41DB9204DEA70793C9F4A1EF /* cvsr_grouped_cell_top_tapped@2x.png in Resources */,
+				ED7DD445EAC3709F93408D015A16819B /* cvsr_keyboardBackground.png in Resources */,
+				5E30178BAEFD1B822BDACCC59659276F /* cvsr_keyboardBackground@2x.png in Resources */,
+				519CEF44D15F007A3869C88F57EA1C04 /* star-empty.png in Resources */,
+				FD128C6FFFE7DB6C0F71F9225D4D2D49 /* star-empty@2x.png in Resources */,
+				94344840E359F66DE99EE46C6913D6CE /* star-full.png in Resources */,
+				969455FDB5F12D2FDF7AF879CA50A2E6 /* star-full@2x.png in Resources */,
+				5D2B75A227F05AD27A78F9316F14D93D /* SwrveConversation.storyboard in Resources */,
+				938C7F9C97E30846A51ACC65BF06FF1E /* VGConversationKitResources-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0AEDE951FA114B647C893BEDDE57410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		61DD9680CBAEB39C7237E8B749CAF981 /* Sources */ = {
+		21A2547A7E7ABE18E38FA550227C4343 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				955C482A08809BE469A5AE9ADB27846C /* AdvertileSDK-dummy.m in Sources */,
-				B2A05BAD249F4E3E717ED744F9D6F00E /* AdvertileSDK.m in Sources */,
+				97A1F2A0CDD7ABD6B4EA63B7D1C4DC73 /* ISHPermissionRequest+All.m in Sources */,
+				B45CB2631B83D3486EF5D467E1D6801D /* ISHPermissionRequest.m in Sources */,
+				25189C709074EAB063A4F10360BADAA6 /* ISHPermissionRequestAddressBook.m in Sources */,
+				A1D063333D286C3EB91CD30E7BB1D343 /* ISHPermissionRequestLocation.m in Sources */,
+				4CC9B313455DC05179A2B6F0C84A018F /* ISHPermissionRequestNotificationsRemote.m in Sources */,
+				99E31901E7B5653F49D094CBE92DFFDF /* ISHPermissionRequestPhotoCamera.m in Sources */,
+				7FDF73095EBB209327805E27D2919E30 /* ISHPermissionRequestPhotoLibrary.m in Sources */,
+				EB467439DAF13582A87CD74901D302FF /* Swrve.m in Sources */,
+				ED7BB39DCCE3F27641478389284E5D5F /* SwrveBaseCampaign.m in Sources */,
+				C38541C844411983C523FEF0327305DD /* SwrveButton.m in Sources */,
+				5AFFCE8F059C26F6A1C3E3DE9407AF48 /* SwrveCampaign.m in Sources */,
+				747DD037D3AC7F518AEADADDCA7EF37C /* SwrveConversation.m in Sources */,
+				963CE6D6B00B0EAD96A4D59A2733C93B /* SwrveConversationCampaign.m in Sources */,
+				EE801B2438ED6F041C6CC82B5B31926E /* SwrveImage.m in Sources */,
+				2D04290C77434BC9462D41A7A80ED96E /* SwrveMessage.m in Sources */,
+				3576F5E2838A3B848CF0C56F705CE347 /* SwrveMessageController.m in Sources */,
+				001C81573C978505F90410B9A37E8B68 /* SwrveMessageFormat.m in Sources */,
+				344EF6B729309CA7A4D7FCD7F53E88A5 /* SwrveMessageViewController.m in Sources */,
+				18EED215954BC246DBE791B5DF8C8842 /* SwrvePermissions.m in Sources */,
+				A0DEA5CB35244078E48C1F394300B789 /* SwrveReceiptProvider.m in Sources */,
+				59C5F33575751C327B65A7E09F373114 /* SwrveResourceManager.m in Sources */,
+				553A63CEA7144B71FDE8CB31032BA2EC /* SwrveSDK-dummy.m in Sources */,
+				76571F2C38DC399E36F9D1C40001412D /* SwrveSwizzleHelper.m in Sources */,
+				C53EB52B0BA4E6462A29E11E9CCDAA63 /* SwrveTalkQA.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39389F9D8EA907E6208FB9DFD0CD00E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C633999D7B10971BABC0E24AE60FB983 /* SwrveBaseConversation.m in Sources */,
+				E8F1EC4232077DC04D156BC1A05F0DD4 /* SwrveContentHTML.m in Sources */,
+				A2F1F441E2027B13550D5C87A9A162F7 /* SwrveContentImage.m in Sources */,
+				8C021DF848166A84448459D9E745C566 /* SwrveContentItem.m in Sources */,
+				D04C06C53F7714B7FF0A10FC628C3D12 /* SwrveContentSpacer.m in Sources */,
+				F294FBC1641B169369770611BE3A8920 /* SwrveContentStarRating.m in Sources */,
+				2099DA3AFA3EC1B459A0B6B6D0C05BEB /* SwrveContentStarRatingView.m in Sources */,
+				7E1966A6A5DF068C9E3D9DC7C740F103 /* SwrveContentVideo.m in Sources */,
+				73DB26507A76892105A98FC91AE52418 /* SwrveConversationAtom.m in Sources */,
+				243717D7CDFA3FBC4B554000D401C05A /* SwrveConversationAtomFactory.m in Sources */,
+				16E63776004C0D9563906AC5B15B326C /* SwrveConversationButton.m in Sources */,
+				6EE5004D68C4895A7DA24DDF22A4509B /* SwrveConversationContainerViewController.m in Sources */,
+				D4FE58FDF5E5FFE4631463DE352F5D27 /* SwrveConversationEvents.m in Sources */,
+				7750A3E4304123FC838104F67B69A40D /* SwrveConversationItemViewController.m in Sources */,
+				4080DC78C8B6EE1FF3A9907E1FDF64B5 /* SwrveConversationPane.m in Sources */,
+				019B126F9024F261D27DAC64B49CB1E1 /* SwrveConversationResource.m in Sources */,
+				383237F05213FB59AF245DA731A2DB42 /* SwrveConversationSDK-dummy.m in Sources */,
+				445A5E54A593DDB41F44EC82FD131E54 /* SwrveConversationsNavigationController.m in Sources */,
+				B2165B8FE9381518E05769C7FF1A3F27 /* SwrveConversationStyler.m in Sources */,
+				76662D0AA36990BF765C5F49394C8698 /* SwrveConversationUIButton.m in Sources */,
+				ECCD8DF00523348642D75753A7B97935 /* SwrveInputItem.m in Sources */,
+				B02C770CB21B997F774CE0AD61A2DD43 /* SwrveInputMultiValue.m in Sources */,
+				8BB918A391DFF551361033B746A16874 /* UINavigationController+KeyboardResponderFix.m in Sources */,
+				FD1B4C56010180A1726178ED489DB97C /* UIWebView+YouTubeVimeo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,22 +1449,131 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		824F09535F4A58660C9CD94E3E357E08 /* Sources */ = {
+		B06AC25D4DCBAFF64DFD7658441BCA2D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE5CA95B0F0CC786E2C377BBE47160F6 /* Pods-AdvertileSDK_Example-dummy.m in Sources */,
+				0701945BD20F12188FC177E6710841EF /* ABTracker.m in Sources */,
+				7CA96F453C4EEC2229781BDD17787488 /* AbTrackingLib-dummy.m in Sources */,
+				8CAE44F21B64226D45DC40E3F9ADDC9C /* NSURLConnection+Blocks.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7493CC709E80B15D836C688F0440B76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				969986A117C67702659370415C54841E /* AdvertileSDK-dummy.m in Sources */,
+				494D7E391D749264000332FD /* AdvertileSDK.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C932E2A804C590CA2F224F68E9E2DF7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D00FD35BF5ED6B40847033B636D6B69 /* SwrveCommon.m in Sources */,
+				15C45A265C69C0408ED92E0F65E170EA /* SwrveCommonConnectionDelegate.m in Sources */,
+				C8DBD62E74540D7B8BBDC45EAE487339 /* SwrveSDKCommon-dummy.m in Sources */,
+				31D96FA542A9BCEB5DEA41D055C031F3 /* SwrveSignatureProtectedFile.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC027328B7C5E114E1E9B1FCEBB3A9E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2CD18E7E4B8583BB496341355A7252F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A2507CD9E24F546ACBBA57E22E5E49 /* Pods-AdvertileSDK_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		839EFCD32D0EE4B9DC4A49ED5B7CD957 /* PBXTargetDependency */ = {
+		007055ABA8D0661724C80DA9F5A4A087 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwrveConversationSDK;
+			target = ADF5D8AFD2235153534269228172482D /* SwrveConversationSDK */;
+			targetProxy = E3D569896358CF015548AAE394825C1F /* PBXContainerItemProxy */;
+		};
+		14360C20BA372A4C2AA9B253F9F10B2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwrveSDKCommon;
+			target = FDA22FA12F4620528DCCFB018F338009 /* SwrveSDKCommon */;
+			targetProxy = 269E2E50E475163B1EA7D3AFD7516961 /* PBXContainerItemProxy */;
+		};
+		3B3E34F60DB9C91BDE351AFD79212A12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AbTrackingLib-AbTrackingLib";
+			target = A0582D2BA86FFFFE52337D3618A94378 /* AbTrackingLib-AbTrackingLib */;
+			targetProxy = 6B3458DCED525C1C1CC74195C7EFB932 /* PBXContainerItemProxy */;
+		};
+		40C8759FB5FF0FC126F0773B859E49B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AbTrackingLib;
+			target = 940007555684AE53CDE4C28B3C05C680 /* AbTrackingLib */;
+			targetProxy = 025B3AABA82BCB556FC6C406E4FA7F2F /* PBXContainerItemProxy */;
+		};
+		46A42FC38CBB3DC3D5D0D03478426562 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwrveSDKCommon;
+			target = FDA22FA12F4620528DCCFB018F338009 /* SwrveSDKCommon */;
+			targetProxy = FC01D73ADAA4EA8D30A3A88BFF9AA9CC /* PBXContainerItemProxy */;
+		};
+		4A8656D6218366459BCC2CDBF82A2825 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AdvertileSDK;
-			target = A570D0114AD1D51A692DF6B13E535698 /* AdvertileSDK */;
-			targetProxy = 4EA4A51D73A0D6F05AC0CC708CEF6FC8 /* PBXContainerItemProxy */;
+			target = C0E4F3A8ACFB6E9404B71377DF2BB14D /* AdvertileSDK */;
+			targetProxy = 95FA10D499D0F52E5DA887B3EE53CD48 /* PBXContainerItemProxy */;
+		};
+		637FBA04AE40C92C991AA448FADD3586 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwrveSDKCommon;
+			target = FDA22FA12F4620528DCCFB018F338009 /* SwrveSDKCommon */;
+			targetProxy = 836CF3D1E1939EEAD79D022F89339915 /* PBXContainerItemProxy */;
+		};
+		741E6B7E9D124C293BCC851EEB92C4E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AbTrackingLib;
+			target = 940007555684AE53CDE4C28B3C05C680 /* AbTrackingLib */;
+			targetProxy = 6D78227BC396C0F272C5E9C32BD2FB79 /* PBXContainerItemProxy */;
+		};
+		9986FF888317AEA577B76E1882087BD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwrveSDK;
+			target = E2BAB78F96DAADF6C223E602C290569A /* SwrveSDK */;
+			targetProxy = F64CBB7F90B4B51675202C23F281D4D7 /* PBXContainerItemProxy */;
+		};
+		9FFAC4CD365642A294EB63CC89F09949 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwrveConversationSDK;
+			target = ADF5D8AFD2235153534269228172482D /* SwrveConversationSDK */;
+			targetProxy = 0FC00CE5A1D6082576359AA5F35D6CE7 /* PBXContainerItemProxy */;
+		};
+		A5F266BE0894D197A7DFB457B9E7D111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwrveSDKCommon;
+			target = FDA22FA12F4620528DCCFB018F338009 /* SwrveSDKCommon */;
+			targetProxy = DF71932BAC8F8425E827D068D4DCD949 /* PBXContainerItemProxy */;
+		};
+		E65D92D5C31E32166DC90E39B6B29787 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwrveConversationSDK;
+			target = ADF5D8AFD2235153534269228172482D /* SwrveConversationSDK */;
+			targetProxy = 2DCEE6B9A19EF33A12BF5DBC24307BED /* PBXContainerItemProxy */;
+		};
+		FA98D394FE4CD9DADA4361C83F4D4556 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwrveSDK;
+			target = E2BAB78F96DAADF6C223E602C290569A /* SwrveSDK */;
+			targetProxy = 4118459C7BF268DF50D44F131F9F6B27 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,6 +1616,184 @@
 			};
 			name = Release;
 		};
+		1057973CD469361C9803CE8DEE5AC97B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68EA3E0850DDC1383E9B35A087D75F12 /* SwrveSDKCommon.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwrveSDKCommon/SwrveSDKCommon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwrveSDKCommon/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwrveSDKCommon/SwrveSDKCommon.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwrveSDKCommon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1142E95D3908904CD08B2DE8F68A8611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 790CA40C7CF4C13558741D10E38BE049 /* AdvertileSDK.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AdvertileSDK/AdvertileSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AdvertileSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AdvertileSDK/AdvertileSDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AdvertileSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1E4466D14DB1F29539A984123B0BA6DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0E0240136F3718C99E8DEF1EA52520A /* SwrveConversationSDK.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwrveConversationSDK/SwrveConversationSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwrveConversationSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwrveConversationSDK/SwrveConversationSDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwrveConversationSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25BA77B93FB4D9705154C23B11F7F6F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68EA3E0850DDC1383E9B35A087D75F12 /* SwrveSDKCommon.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwrveSDKCommon/SwrveSDKCommon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwrveSDKCommon/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwrveSDKCommon/SwrveSDKCommon.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwrveSDKCommon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B8DF1A29B88E32E51944CE04C025074 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 790CA40C7CF4C13558741D10E38BE049 /* AdvertileSDK.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AdvertileSDK/AdvertileSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AdvertileSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AdvertileSDK/AdvertileSDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AdvertileSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		36F6B2B2DB5669D043D8981C069D62D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0F54C8CB72F326D172652E22A7C2996 /* Pods-AdvertileSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AdvertileSDK_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdvertileSDK_Example/Pods-AdvertileSDK_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AdvertileSDK_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		39936738AD94E0315F62E151160EF053 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FDED8A54D5F4BB3E3AC56DFEA0E9B5F0 /* Pods-AdvertileSDK_Tests.release.xcconfig */;
@@ -428,9 +1827,9 @@
 			};
 			name = Release;
 		};
-		5B121299B07DE8D705787249ECB0683C /* Debug */ = {
+		3B341F3AD2F15693D27E405E75439613 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C6A319502EDEEED7690741AB788C59D /* AdvertileSDK.xcconfig */;
+			baseConfigurationReference = A458421E8876AB6DAEC56171143F0C18 /* SwrveSDK.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -441,14 +1840,101 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AdvertileSDK/AdvertileSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AdvertileSDK/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwrveSDK/SwrveSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwrveSDK/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AdvertileSDK/AdvertileSDK.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwrveSDK/SwrveSDK.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AdvertileSDK;
+				PRODUCT_NAME = SwrveSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3E0C601FCDAC14C6689F913094D54F73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B240BF5C26163D3DE11C7906B6DB0E /* AbTrackingLib.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AbTrackingLib/AbTrackingLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AbTrackingLib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AbTrackingLib/AbTrackingLib.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AbTrackingLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		61927D51D03850659EC5E6B7B754F6FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0E0240136F3718C99E8DEF1EA52520A /* SwrveConversationSDK.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwrveConversationSDK/SwrveConversationSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwrveConversationSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwrveConversationSDK/SwrveConversationSDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwrveConversationSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		682F6E26300452E2328F01154911E574 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B240BF5C26163D3DE11C7906B6DB0E /* AbTrackingLib.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AbTrackingLib/AbTrackingLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AbTrackingLib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AbTrackingLib/AbTrackingLib.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AbTrackingLib;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -490,13 +1976,76 @@
 			};
 			name = Debug;
 		};
-		7FE7CF9C5DFA5382D9D693FFE753CE49 /* Debug */ = {
+		717099E191DF2792BD240A423A102A01 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0F54C8CB72F326D172652E22A7C2996 /* Pods-AdvertileSDK_Example.debug.xcconfig */;
+			baseConfigurationReference = A458421E8876AB6DAEC56171143F0C18 /* SwrveSDK.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwrveSDK/SwrveSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwrveSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwrveSDK/SwrveSDK.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwrveSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A66EF9E54FC0C390C2636478FF1C0425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B240BF5C26163D3DE11C7906B6DB0E /* AbTrackingLib.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AbTrackingLib";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/AbTrackingLib/ResourceBundle-AbTrackingLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = AbTrackingLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C733F35EAAE365060E585505FFF5C3BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B240BF5C26163D3DE11C7906B6DB0E /* AbTrackingLib.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AbTrackingLib";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/AbTrackingLib/ResourceBundle-AbTrackingLib-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = AbTrackingLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		CCA2269D09DA7FCAF9F1291613AAF829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B6E44DB4C8DF0F7D3684EBFAE7139DD /* Pods-AdvertileSDK_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -509,41 +2058,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AdvertileSDK_Example/Pods-AdvertileSDK_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_AdvertileSDK_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CF9413E285D6E1E311B1983E9B46643C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C6A319502EDEEED7690741AB788C59D /* AdvertileSDK.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AdvertileSDK/AdvertileSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AdvertileSDK/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AdvertileSDK/AdvertileSDK.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AdvertileSDK;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -594,51 +2114,9 @@
 			};
 			name = Debug;
 		};
-		F47620249F9E8E0D475BC9709E2C1ECD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B6E44DB4C8DF0F7D3684EBFAE7139DD /* Pods-AdvertileSDK_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-AdvertileSDK_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AdvertileSDK_Example/Pods-AdvertileSDK_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_AdvertileSDK_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17FD3D89C11C37E10EC6FE4550B00864 /* Build configuration list for PBXNativeTarget "Pods-AdvertileSDK_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7FE7CF9C5DFA5382D9D693FFE753CE49 /* Debug */,
-				F47620249F9E8E0D475BC9709E2C1ECD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -657,11 +2135,65 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D95CC1EFB5C694515FAF36DAF25B1C3F /* Build configuration list for PBXNativeTarget "AdvertileSDK" */ = {
+		3EF90FC179E4F81E89140718493BBF5C /* Build configuration list for PBXNativeTarget "AbTrackingLib-AbTrackingLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B121299B07DE8D705787249ECB0683C /* Debug */,
-				CF9413E285D6E1E311B1983E9B46643C /* Release */,
+				A66EF9E54FC0C390C2636478FF1C0425 /* Debug */,
+				C733F35EAAE365060E585505FFF5C3BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C56567868BC7E4BECF2C3E4BBA198A5 /* Build configuration list for PBXNativeTarget "SwrveConversationSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E4466D14DB1F29539A984123B0BA6DB /* Debug */,
+				61927D51D03850659EC5E6B7B754F6FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F5532A58E5F2E7FB94281300703271B /* Build configuration list for PBXNativeTarget "SwrveSDKCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25BA77B93FB4D9705154C23B11F7F6F2 /* Debug */,
+				1057973CD469361C9803CE8DEE5AC97B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB76E0B6EE6D20467FFB62D68189D69 /* Build configuration list for PBXNativeTarget "AbTrackingLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682F6E26300452E2328F01154911E574 /* Debug */,
+				3E0C601FCDAC14C6689F913094D54F73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0EF96A21E314754A2A1FDFD13C326C5 /* Build configuration list for PBXNativeTarget "SwrveSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B341F3AD2F15693D27E405E75439613 /* Debug */,
+				717099E191DF2792BD240A423A102A01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D326D85842A2CD52D93303400B6B8892 /* Build configuration list for PBXNativeTarget "Pods-AdvertileSDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36F6B2B2DB5669D043D8981C069D62D1 /* Debug */,
+				CCA2269D09DA7FCAF9F1291613AAF829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F63C5B0B31A927D516B847326A6CFDAC /* Build configuration list for PBXNativeTarget "AdvertileSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B8DF1A29B88E32E51944CE04C025074 /* Debug */,
+				1142E95D3908904CD08B2DE8F68A8611 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

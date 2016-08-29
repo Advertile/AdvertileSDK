@@ -27,7 +27,7 @@ TODO: Library to track events in some libraries and open external urls.
 
   s.source_files = 'AdvertileSDK/Classes/**/*'
   s.dependency 'SwrveSDK'
-  s.dependency 'Google/Analytics'
+  s.dependency 'AbTrackingLib'
 
   # s.resource_bundles = {
   #   'AdvertileSDK' => ['AdvertileSDK/Assets/*.png']

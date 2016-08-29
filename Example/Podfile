@@ -1,7 +1,8 @@
 use_frameworks!
 
 target 'AdvertileSDK_Example' do
-  pod 'AdvertileSDK', :git => 'http://javier.peigneux@dev.navilo.es:7990/scm/asdk/advertilesdk.git'
+#  pod 'AdvertileSDK', :git => 'http://javier.peigneux@dev.navilo.es:7990/scm/asdk/advertilesdk.git'
+  pod 'AdvertileSDK', :path => '../'
 
   target 'AdvertileSDK_Tests' do
     inherit! :search_paths

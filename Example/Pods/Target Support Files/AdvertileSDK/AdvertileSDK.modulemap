@@ -1,0 +1,6 @@
+framework module AdvertileSDK {
+  umbrella header "AdvertileSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

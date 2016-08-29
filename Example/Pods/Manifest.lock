@@ -1,21 +1,29 @@
 PODS:
-  - AdvertileSDK (0.1.0)
+  - AbTrackingLib (1.0.0)
+  - AdvertileSDK (0.1.0):
+    - AbTrackingLib
+    - SwrveSDK
+  - SwrveConversationSDK (4.3.1):
+    - SwrveSDKCommon (~> 4.3.1)
+  - SwrveSDK (4.3.1):
+    - SwrveConversationSDK (~> 4.3.1)
+    - SwrveSDKCommon (~> 4.3.1)
+  - SwrveSDKCommon (4.3.1)
 
 DEPENDENCIES:
-  - AdvertileSDK (from `http://javier.peigneux@dev.navilo.es:7990/scm/asdk/advertilesdk.git`)
+  - AdvertileSDK (from `../`)
 
 EXTERNAL SOURCES:
   AdvertileSDK:
-    :git: http://javier.peigneux@dev.navilo.es:7990/scm/asdk/advertilesdk.git
-
-CHECKOUT OPTIONS:
-  AdvertileSDK:
-    :commit: 6a6379580a35ffdae119914df35480b908f6acce
-    :git: http://javier.peigneux@dev.navilo.es:7990/scm/asdk/advertilesdk.git
+    :path: "../"
 
 SPEC CHECKSUMS:
-  AdvertileSDK: d6713805707a22fbfdb4cd6c6cbae429578f0dcf
+  AbTrackingLib: eaa394f62400ce5608e35319337f8498282ffaab
+  AdvertileSDK: 1efbd2bd5ad92f2659d49cb1725d64bbd41b0f1c
+  SwrveConversationSDK: 3d21342943a8c2754a623e4661f1c0f8d751e0be
+  SwrveSDK: 5aa448d40ac46ca9db51e22374f0945f72cdaa29
+  SwrveSDKCommon: 7cdfea4e23fb02e96d3b67c3576582bc8e16b711
 
-PODFILE CHECKSUM: c9a105af68700996243e548ea27e67d40738940b
+PODFILE CHECKSUM: b510e2c8df9186a9c8d0d3134ea5d4ea8bd68394
 
 COCOAPODS: 1.0.0
