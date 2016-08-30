@@ -7,12 +7,14 @@
 //
 
 #import "ADAppDelegate.h"
+#import <AdvertileSDK/PublicHeader.h>
 
 @implementation ADAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [AdvertileSDK log:@"hola"];
     return YES;
 }
 
