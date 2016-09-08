@@ -18,13 +18,18 @@
 }
 
 
-+(void)activeSwreWithId:(NSString*)swreId andApiKey:(NSString*)apiKey{
++(void)activeSwrveWithId:(NSString*)swrveId andApiKey:(NSString*)apiKey{
     SwrveConfig* config = [[SwrveConfig alloc] init];
     config.selectedStack = SWRVE_STACK_EU;
     config.pushEnabled = YES;
     config.pushNotificationEvents = nil;
-    [Swrve sharedInstanceWithAppID:swreId apiKey:apiKey config:config launchOptions:nil];
+    [Swrve sharedInstanceWithAppID:swrveId apiKey:apiKey config:config launchOptions:nil];
     
+}
+
++(NSString*)swrveUserId{
+    SwrveConfig* config = [[SwrveConfig alloc] init];
+    return config.userId;
 }
 
 

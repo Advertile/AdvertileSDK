@@ -13,6 +13,7 @@
 +(void)log:(NSString*)text;
 +(void)openUrl:(NSString*)urlToOpen;
 +(void)trackOpenEvent;
-+(void)activeSwreWithId:(NSString*)swreId andApiKey:(NSString*)apiKey;
++(void)activeSwrveWithId:(NSString*)swrveId andApiKey:(NSString*)apiKey;
 +(void)managePetitionWhenOpenFromOtherApp:(NSDictionary*)infoDic;
++(NSString*)swrveUserId;
 @end
