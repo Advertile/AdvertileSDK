@@ -1,7 +1,0 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/AbTrackingLib" "$PODS_CONFIGURATION_BUILD_DIR/AdvertileSDK" "$PODS_CONFIGURATION_BUILD_DIR/SwrveConversationSDK" "$PODS_CONFIGURATION_BUILD_DIR/SwrveSDK" "$PODS_CONFIGURATION_BUILD_DIR/SwrveSDKCommon"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/AbTrackingLib/AbTrackingLib.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/AdvertileSDK/AdvertileSDK.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SwrveConversationSDK/SwrveConversationSDK.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SwrveSDK/SwrveSDK.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SwrveSDKCommon/SwrveSDKCommon.framework/Headers"
-PODS_BUILD_DIR = $BUILD_DIR
-PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
-PODS_ROOT = ${SRCROOT}/Pods

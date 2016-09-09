@@ -18,7 +18,7 @@
 }
 
 
-+(void)activeSwrveWithId:(NSString*)swrveId andApiKey:(NSString*)apiKey{
++(void)activeSwrveWithId:(int)swrveId andApiKey:(NSString*)apiKey{
     SwrveConfig* config = [[SwrveConfig alloc] init];
     config.selectedStack = SWRVE_STACK_EU;
     config.pushEnabled = YES;
