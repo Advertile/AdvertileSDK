@@ -22,8 +22,12 @@
 
 
 
-+(void)trackOpenEvent{
-    [ABTracker trackOpenEvent];
++(void)trackOpenEvent:(BOOL)isRelease{
+    if(isRelease){
+        [ABTracker trackOpenEvent];
+    } else {
+        [ABTracker trackOpenEventStaging];
+    }
 }
 
 +(void)openUrl:(NSString*)urlToOpen{
