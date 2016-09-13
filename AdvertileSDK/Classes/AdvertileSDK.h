@@ -12,7 +12,7 @@
 
 +(void)log:(NSString*)text;
 +(void)openUrl:(NSString*)urlToOpen;
-+(void)trackOpenEvent;
++(void)trackOpenEvent:(BOOL)isRelease;
 +(void)managePetitionWhenOpenFromOtherApp:(NSDictionary*)infoDic;
 
 
