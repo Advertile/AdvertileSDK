@@ -40,11 +40,12 @@
 
 #pragma mark - Swrve methods
 
-+(void)activeSwrveWithId:(int)swrveId andApiKey:(NSString*)apiKey{
++(void)activeSwrveWithId:(int)swrveId apiKey:(NSString*)apiKey andUserId:(NSString*)userId{
     SwrveConfig* config = [[SwrveConfig alloc] init];
     config.selectedStack = SWRVE_STACK_EU;
     config.pushEnabled = YES;
     config.pushNotificationEvents = nil;
+    config.userId = userId;
     [Swrve sharedInstanceWithAppID:swrveId apiKey:apiKey config:config launchOptions:nil];
     [[Swrve sharedInstance] event:@"Swrve.push_notification_permission"];
     
@@ -56,8 +57,7 @@
 }
 
 +(NSString*)swrveUserId{
-    SwrveConfig* config = [[SwrveConfig alloc] init];
-    return config.userId;
+    return [Swrve sharedInstance].config.userId;
 }
 
 +(void)swrvePushNotificationReceived:(NSDictionary*)userInfo{
