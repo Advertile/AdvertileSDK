@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AdvertileSDK'
-  s.version          = ‘0.1.3’
+  s.version          = '0.1.3'
   s.summary          = 'A short description of AdvertileSDK.'
 
 
