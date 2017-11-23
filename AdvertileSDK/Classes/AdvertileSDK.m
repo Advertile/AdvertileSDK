@@ -8,6 +8,8 @@
 
 #import "AdvertileSDK.h"
 #import "swrve.h"
+#import "SwrveSDK.h"
+
 #import "ABTracker.h"
 
 @implementation AdvertileSDK
@@ -42,26 +44,26 @@
 
 +(void)activeSwrveWithId:(int)swrveId apiKey:(NSString*)apiKey andUserId:(NSString*)userId{
     SwrveConfig* config = [[SwrveConfig alloc] init];
-    config.selectedStack = SWRVE_STACK_EU;
+    config.stack = SWRVE_STACK_EU;
     config.pushEnabled = YES;
     config.pushNotificationEvents = nil;
     config.userId = userId;
-    [Swrve sharedInstanceWithAppID:swrveId apiKey:apiKey config:config launchOptions:nil];
-    [[Swrve sharedInstance] event:@"Swrve.push_notification_permission"];
-    
+    [[SwrveSDK sharedInstance] event:@"Swrve.push_notification_permission"];
+    [SwrveSDK sharedInstanceWithAppID:swrveId apiKey:apiKey config:config launchOptions:nil];
 }
 +(void)registeriOSTokenInSwrve:(NSString*)iOSToken{
     NSString *token = [iOSToken stringByTrimmingCharactersInSet: [NSCharacterSet characterSetWithCharactersInString:@"<>"]];
     token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
-    [[Swrve sharedInstance] userUpdate:@{ @"ios_token" : token } ];
+    
+    [[SwrveSDK sharedInstance] userUpdate:@{ @"ios_token" : token } ];
 }
 
 +(NSString*)swrveUserId{
-    return [Swrve sharedInstance].config.userId;
+    return [SwrveSDK sharedInstance].config.userId;
 }
 
 +(void)swrvePushNotificationReceived:(NSDictionary*)userInfo{
-    [[Swrve sharedInstance].talk pushNotificationReceived:userInfo];
+    [SwrveSDK pushNotificationReceived:userInfo];
 }
 
 @end

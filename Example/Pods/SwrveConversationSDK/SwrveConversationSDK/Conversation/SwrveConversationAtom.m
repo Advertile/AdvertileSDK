@@ -1,8 +1,3 @@
-#if !__has_feature(objc_arc)
-#error ConverserSDK must be built with ARC.
-// You can turn on ARC for only ConverserSDK files by adding -fobjc-arc to the build phase for each of its files.
-#endif
-
 #import "SwrveConversationAtom.h"
 #import "SwrveBaseConversation.h"
 
@@ -12,6 +7,7 @@
 @synthesize type = _type;
 @synthesize view = _view;
 @synthesize style;
+@synthesize delegate;
 
 #define kCellTag 101
 
@@ -24,17 +20,16 @@
     return self;
 }
 
--(BOOL) willRequireLandscape {
-    return YES;
-}
-
 -(void) stop {
     // By default, does nothing. Specialize in subclass
 }
 
--(void) viewDidDisappear
-{
+-(void) viewDidDisappear {
     // By default, does nothing. Specialize in subclass
+}
+
+-(void) removeView {
+    _view = nil;
 }
 
 -(void) loadViewWithContainerView:(UIView*)containerView {
@@ -86,9 +81,8 @@
     return CGRectMake(_view.frame.origin.x, _view.frame.origin.y, _view.superview.frame.size.width, _view.frame.size.height);
 }
 
-// iOS8+
--(void)viewWillTransitionToSize:(CGSize)size
-{
+
+-(void)parentViewChangedSize:(CGSize)size {
 #pragma unused(size)
     // By default, does nothing. Specialize in subclass
 }

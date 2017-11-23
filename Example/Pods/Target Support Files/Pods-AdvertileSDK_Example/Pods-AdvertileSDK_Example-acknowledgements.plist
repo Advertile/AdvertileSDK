@@ -14,7 +14,7 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright (c) 2015 Laura Or&#225;n &lt;laura.oran@navilo.es&gt;
+			<string>Copyright (c) 2015 Laura Orán &lt;laura.oran@navilo.es&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -34,6 +34,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>AbTrackingLib</string>
 			<key>Type</key>
@@ -61,6 +63,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>AdvertileSDK</string>
 			<key>Type</key>
@@ -68,7 +72,7 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2010-2016 Swrve Mobile Inc, or its licensors
+			<string>Copyright 2010-2017 Swrve Mobile Inc, or its licensors
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
@@ -257,7 +261,10 @@ limitations under the License.
       incurred by, or claims asserted against, such Contributor by reason
       of your accepting any such warranty or additional liability.
 
-   END OF TERMS AND CONDITIONS</string>
+   END OF TERMS AND CONDITIONS
+</string>
+			<key>License</key>
+			<string>Apache License, Version 2.0</string>
 			<key>Title</key>
 			<string>SwrveConversationSDK</string>
 			<key>Type</key>
@@ -265,7 +272,7 @@ limitations under the License.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2010-2015 Swrve Mobile Inc, or its licensors
+			<string>Copyright 2010-2017 Swrve Mobile Inc, or its licensors
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
@@ -454,7 +461,10 @@ limitations under the License.
       incurred by, or claims asserted against, such Contributor by reason
       of your accepting any such warranty or additional liability.
 
-   END OF TERMS AND CONDITIONS</string>
+   END OF TERMS AND CONDITIONS
+</string>
+			<key>License</key>
+			<string>Apache License, Version 2.0</string>
 			<key>Title</key>
 			<string>SwrveSDK</string>
 			<key>Type</key>
@@ -462,7 +472,7 @@ limitations under the License.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2010-2016 Swrve Mobile Inc, or its licensors
+			<string>Copyright 2010-2017 Swrve Mobile Inc, or its licensors
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
@@ -651,7 +661,10 @@ limitations under the License.
       incurred by, or claims asserted against, such Contributor by reason
       of your accepting any such warranty or additional liability.
 
-   END OF TERMS AND CONDITIONS</string>
+   END OF TERMS AND CONDITIONS
+</string>
+			<key>License</key>
+			<string>Apache License, Version 2.0</string>
 			<key>Title</key>
 			<string>SwrveSDKCommon</string>
 			<key>Type</key>

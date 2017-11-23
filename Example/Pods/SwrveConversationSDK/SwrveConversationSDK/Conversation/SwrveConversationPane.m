@@ -1,13 +1,6 @@
-#if !__has_feature(objc_arc)
-#error ConverserSDK must be built with ARC.
-// You can turn on ARC for only ConverserSDK files by adding -fobjc-arc to the build phase for each of its files.
-#endif
-
 #import "SwrveConversationPane.h"
-#import "SwrveConversationAtom.h"
 #import "SwrveConversationAtomFactory.h"
 #import "SwrveConversationButton.h"
-#import "SwrveSetup.h"
 
 @implementation SwrveConversationPane
 @synthesize content = _content;
@@ -15,11 +8,12 @@
 @synthesize tag = _tag;
 @synthesize title = _title;
 @synthesize pageStyle = _pageStyle;
+@synthesize isActive = _isActive;
 
 -(id) initWithDictionary:(NSDictionary *)dict {
     self = [super init];
     if(self) {
-        _tag = [dict objectForKey:@"tag"];
+        _tag = [dict objectForKey:kSwrveKeyTag];
         _title = [dict objectForKey:@"title"];
         NSArray *contentItems = [dict objectForKey:@"content"];
         if(contentItems) {
@@ -31,7 +25,6 @@
                         [arr addObjectsFromArray:atoms];
                     }
                 }
-                
             }
             _content = [NSArray arrayWithArray:arr];
         } else {
@@ -54,7 +47,7 @@
         } else {
             _controls = nil;
         }
-        NSDictionary *pagesJson = [dict objectForKey:@"style"];
+        NSDictionary *pagesJson = [dict objectForKey:kSwrveKeyStyle];
         if(pagesJson) {
             _pageStyle = pagesJson;
         }
@@ -64,14 +57,13 @@
 
 - (NSMutableArray <SwrveConversationAtom *> *) contentForTag:(NSString*)tag {
     NSMutableArray <SwrveConversationAtom*> *atoms = [NSMutableArray array];
-    for(unsigned int i=0; i < [_content count]; i++) {
-        SwrveConversationAtom *atom = (SwrveConversationAtom*)_content[i];
+    for(unsigned int i=0; i < [self.content count]; i++) {
+        SwrveConversationAtom *atom = (SwrveConversationAtom*)self.content[i];
         if ([atom.tag isEqualToString:tag]) {
             [atoms addObject:atom];
         }
     }
     return atoms;
 }
-
 
 @end

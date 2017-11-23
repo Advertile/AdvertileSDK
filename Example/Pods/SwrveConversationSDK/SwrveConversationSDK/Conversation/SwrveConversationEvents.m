@@ -10,7 +10,7 @@
 @implementation SwrveConversationEvents
 
 +(void)eventInternal:(NSString*)eventName payload:(NSDictionary*)eventPayload {
-    [[SwrveCommon sharedInstance] eventInternal:eventName payload:eventPayload triggerCallback:true];
+    [[SwrveCommon sharedInstance] eventInternal:eventName payload:eventPayload triggerCallback:false];
 }
 
 +(void)started:(SwrveBaseConversation*)conversation onStartPage:(NSString*)pageTag {
@@ -25,7 +25,7 @@
     [self genericEvent:@"cancel" forConversation:conversation onPage:pageTag];
 }
 
-+(void)genericEvent:(NSString*)name forConversation:(SwrveBaseConversation*)conversation onPage:(NSString*)pageTag withControl:controlTag{
++(void)genericEvent:(NSString*)name forConversation:(SwrveBaseConversation*)conversation onPage:(NSString*)pageTag withControl:controlTag {
     NSDictionary *eventPayload =
     @{
       @"event" : name,
