@@ -10,13 +10,26 @@
 #import <AdSupport/AdSupport.h>
 #import "NSURLConnection+Blocks.h"
 #import <UIKit/UIKit.h>
+#import "KeychainAccess.h"
 
 #define kBaseUrl @"http://www.abtrckr.com/"
+#define kBaseUrlStaging @"https://test.abtrckr.com/"
 
 @implementation ABTracker
 
 + (void) trackOpenEvent
 {
+    [ABTracker trackEventWithUrl:kBaseUrl];
+}
+
++ (void)trackOpenEventStaging
+{
+    [ABTracker trackEventWithUrl:kBaseUrlStaging];
+}
+
+
+
++(void)trackEventWithUrl:(NSString*)baseUrl{
     NSMutableDictionary *event = [[NSMutableDictionary alloc] init];
     [event setObject:@"open" forKey:@"name"];
     NSString *bundleId = [[NSBundle mainBundle] bundleIdentifier];
@@ -52,12 +65,25 @@
     if(deviceName) {
         [event setObject:deviceName forKey:@"device_name"];
     }
+    NSString * swrveId = [[NSUserDefaults standardUserDefaults]objectForKey:@"swrve_user_id"];
+    if(swrveId) {
+        [event setObject:swrveId forKey:@"swrve_id"];
+    }
+
+    NSString * authId = [KeychainAccess valueForKeychainKey:kABUserAuthToken service:kABUserDataService];
+    if(authId){
+        [event setObject:authId forKey:@"aid"];
+    }
+
+    
+    
     [event setObject:@"events" forKey:@"type"];
-   
+    
+    
     NSDictionary *events = [[NSDictionary alloc] initWithObjectsAndKeys:event, @"data", nil];
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:events options:kNilOptions error:nil];
     
-    NSString *urlString = [kBaseUrl stringByAppendingString:@"/api/events"];
+    NSString *urlString = [baseUrl stringByAppendingPathComponent:@"/api/events"];
     
     NSURL* url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *configRequest = [NSMutableURLRequest requestWithURL:url
@@ -71,16 +97,14 @@
     [NSURLConnection connectionWithRequest:configRequest
                               onCompletion:^(NSData *data, NSInteger statusCode)
      {
-         if(statusCode == 200) {
-             NSLog(@"POST Event Success");
-         } else {
-             NSLog(@"Error %ld", (long)statusCode);
-         }
+         NSLog(@"POST Event http status %ld", (long)statusCode);
      }
                                     onFail:^(NSError *error, NSInteger statusCode)
      {
          NSLog(@"POST Event Error");
      }];
+
 }
+
 
 @end

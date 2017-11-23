@@ -1,7 +1,15 @@
 #import "Swrve.h"
-#import "SwrveBaseCampaign.h"
 #import "SwrveConversationCampaign.h"
-#import "SwrvePrivateBaseCampaign.h"
+#import "SwrveConversationPane.h"
+#import "SwrveContentItem.h"
+#import "SwrveInputMultiValue.h"
+#import "SwrveConversationButton.h"
+#import "SwrveAssetsManager.h"
+#import "SwrveContentImage.h"
+#import "SwrveContentHTML.h"
+#import "SwrveContentStarRating.h"
+#import "SwrveCampaign+Private.h"
+#import "SwrveMessageController+Private.h"
 
 @interface SwrveConversationCampaign()
 
@@ -13,27 +21,57 @@
 
 @synthesize controller, conversation, filters;
 
--(id)initAtTime:(NSDate*)time fromJSON:(NSDictionary *)dict withAssetsQueue:(NSMutableSet*)assetsQueue forController:(SwrveMessageController*)_controller
-{
-    self.controller = _controller;
-    id instance = [super initAtTime:time fromJSON:dict withAssetsQueue:assetsQueue forController:_controller];
-    NSDictionary* conversationJson = [dict objectForKey:@"conversation"];
-    self.conversation = [SwrveConversation fromJSON:conversationJson forCampaign:self forController:_controller];
-    self.filters      = [dict objectForKey:@"filters"];
-    [self addAssetsToQueue:assetsQueue];
+- (id)initAtTime:(NSDate *)time fromDictionary:(NSDictionary *)json withAssetsQueue:(NSMutableSet *)assetsQueue forController:(SwrveMessageController *)_controller {
+    if (self = [super initAtTime:time fromDictionary:json]) {
+        self.controller = _controller;
+        NSDictionary *conversationJson = [json objectForKey:@"conversation"];
+        self.conversation = [[SwrveConversation alloc] initWithJSON:conversationJson forCampaign:self forController:controller];
+
+        self.filters = [json objectForKey:@"filters"];
+        [self addAssetsToQueue:assetsQueue];
+    }
     
-    return instance;
+    return self;
 }
 
--(void)addAssetsToQueue:(NSMutableSet*)assetsQueue
-{
-    // Queue conversation images for download
-    for(NSDictionary* page in self.conversation.pages) {
-        for (NSDictionary *contentItem in [page objectForKey:@"content"]) {
-            if ([[contentItem objectForKey:@"type"] isEqualToString:@"image"]) {
-                [assetsQueue addObject:[contentItem objectForKey:@"value"]];
+- (void)addAssetsToQueue:(NSMutableSet *)assetsQueue {
+    for (SwrveConversationPane *page in self.conversation.pages) {
+
+        // Add image and font assets to queue from content
+        for (SwrveContentItem *contentItem in page.content) {
+            if ([contentItem isKindOfClass:[SwrveContentImage class]]) {
+                [self addImageToQ:assetsQueue withAsset:contentItem];
+            } else if ([contentItem isKindOfClass:[SwrveContentHTML class]] || [contentItem isKindOfClass:[SwrveContentStarRating class]]) {
+                [self addFontToQ:assetsQueue withAsset:contentItem.style];
+            } else if ([contentItem isKindOfClass:[SwrveInputMultiValue class]]) {
+                SwrveInputMultiValue *inputMultiValue = (SwrveInputMultiValue*) contentItem;
+                [self addFontToQ:assetsQueue withAsset:inputMultiValue.style];
+
+                for (NSDictionary *value in inputMultiValue.values) {
+                    NSDictionary *style = [value objectForKey:kSwrveKeyStyle];
+                    [self addFontToQ:assetsQueue withAsset:style];
+                }
             }
         }
+
+        // Add font assets to queue from button control
+        for (SwrveConversationButton *button in page.controls) {
+            [self addFontToQ:assetsQueue withAsset:button.style];
+        }
+    }
+}
+
+- (void)addImageToQ:(NSMutableSet *)assetQueue withAsset:(SwrveContentItem *)contentItem {
+    NSMutableDictionary *assetQueueItem = [SwrveAssetsManager assetQItemWith:contentItem.value andDigest:contentItem.value andIsImage:YES];
+    [assetQueue addObject:assetQueueItem];
+}
+
+- (void)addFontToQ:(NSMutableSet *)assetQueue withAsset:(NSDictionary *)style {
+    if (style && [style objectForKey:kSwrveKeyFontFile] && [style objectForKey:kSwrveKeyFontDigest] && ![SwrveBaseConversation isSystemFont:style]) {
+        NSString *name = [style objectForKey:kSwrveKeyFontFile];
+        NSString *digest = [style objectForKey:kSwrveKeyFontDigest];
+        NSMutableDictionary *assetQueueItem = [SwrveAssetsManager assetQItemWith:name andDigest:digest andIsImage:NO];
+        [assetQueue addObject:assetQueueItem];
     }
 }
 
@@ -57,31 +95,40 @@
  * Quick check to see if this campaign might have messages matching this event trigger
  * This is used to decide if the campaign is a valid candidate for automatically showing at session start
  */
--(BOOL)hasConversationForEvent:(NSString*)event
-{
-    return [self triggers] != nil && [[self triggers] containsObject:[event lowercaseString]];
+
+-(BOOL)hasConversationForEvent:(NSString*)event {
+    
+    return [self hasConversationForEvent:event withPayload:nil];
 }
 
--(SwrveConversation*)getConversationForEvent:(NSString*)event
+- (BOOL)hasConversationForEvent:(NSString*)event withPayload:(NSDictionary *)payload {
+    
+    return [self canTriggerWithEvent:event andPayload:payload];
+}
+
+-(SwrveConversation*)conversationForEvent:(NSString*)event
                         withAssets:(NSSet*)assets
                             atTime:(NSDate*)time
-
 {
-    return [self getConversationForEvent:event withAssets:assets atTime:time withReasons:nil];
+    return [self conversationForEvent:event withPayload:nil withAssets:assets atTime:time withReasons:nil];
 }
 
 
--(SwrveConversation*)getConversationForEvent:(NSString*)event
-                        withAssets:(NSSet*)assets
-                            atTime:(NSDate*)time
-                       withReasons:(NSMutableDictionary*)campaignReasons
-{
-    if (![self hasConversationForEvent:event]){
+-(SwrveConversation*)conversationForEvent:(NSString*)event
+                                 withPayload:(NSDictionary*)payload
+                                  withAssets:(NSSet*)assets
+                                      atTime:(NSDate*)time
+                                 withReasons:(NSMutableDictionary*)campaignReasons {
+    
+    if (![self hasConversationForEvent:event withPayload:payload]) {
+        
         DebugLog(@"There is no trigger in %ld that matches %@", (long)self.ID, event);
+        [self logAndAddReason:[NSString stringWithFormat:@"There is no trigger in %ld that matches %@ with conditions %@", (long)self.ID, event, payload] withReasons:campaignReasons];
+        
         return nil;
     }
     
-    if (conversation == nil)
+    if (self.conversation == nil)
     {
         [self logAndAddReason:[NSString stringWithFormat:@"No conversations in campaign %ld", (long)self.ID] withReasons:campaignReasons];
         return nil;
@@ -110,7 +157,7 @@
     
     if ([self.conversation assetsReady:assets]) {
         DebugLog(@"%@ matches a trigger in %ld", event, (long)self.ID);
-        return conversation;
+        return self.conversation;
     }
     
     [self logAndAddReason:[NSString stringWithFormat:@"Campaign %ld hasn't finished downloading", (long)self.ID] withReasons:campaignReasons];
