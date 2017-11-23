@@ -16,11 +16,11 @@ Pod::Spec.new do |s|
 TODO: Library to track events in some libraries and open external urls.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/AdvertileSDK'
+  s.homepage         = 'https://github.com/Advertile/AdvertileSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'javier.peigneux' => 'javier.peigneux@navilo.es' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/AdvertileSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Advertile/AdvertileSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
